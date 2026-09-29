@@ -1,0 +1,47 @@
+model: "DH-YN100"
+category: pressure-level
+featured: false
+order: 9
+name:
+  zh: "耐震压力表"
+  en: "Liquid-filled Pressure Gauge"
+summary:
+  zh: "DH-YN100 耐震压力表，-0.1~100 MPa，适用于水厂液位、管网压力、储罐计量等场合。"
+  en: "DH-YN100 Liquid-filled Pressure Gauge, -0.1~100 MPa, for Plant level, Network pressure, Tank gauging and more."
+features:
+  zh:
+    - "高稳定性传感器，长期漂移小"
+    - "LCD 现场显示，按键调零"
+    - "宽温度补偿"
+    - "可选防爆型"
+  en:
+    - "High-stability sensor with low long-term drift"
+    - "Local LCD with push-button zero"
+    - "Wide temperature compensation"
+    - "Explosion-proof option"
+applications:
+  zh:
+    - "水厂液位"
+    - "管网压力"
+    - "储罐计量"
+    - "锅炉"
+  en:
+    - "Plant level"
+    - "Network pressure"
+    - "Tank gauging"
+    - "Boilers"
+specs:
+  - label: { zh: "测量范围", en: "Range" }
+    value: "-0.1~100 MPa"
+  - label: { zh: "精度", en: "Accuracy" }
+    value: "Class 1.6"
+  - label: { zh: "输出信号", en: "Output" }
+    value: "4-20mA + HART / RS485"
+  - label: { zh: "过程连接", en: "Process connection" }
+    value: { zh: "M20×1.5 / G1/2 / 法兰", en: "M20×1.5 / G1/2 / Flange" }
+  - label: { zh: "防爆等级", en: "Explosion proof" }
+    value: "Ex ia IIC T6 / Ex d IIC T6"
+  - label: { zh: "防护等级", en: "Protection" }
+    value: "IP67"
+tags: ["4-20mA", "HART"]
+images: []

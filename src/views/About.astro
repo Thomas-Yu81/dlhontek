@@ -1,0 +1,48 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import { site } from '../data/site';
+import { localePath, useT, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useT(lang);
+const stats =
+  lang === 'zh'
+    ? [['15+', '行业经验（年）'], ['60+', '产品型号'], ['1000+', '服务项目'], ['30+', '覆盖省市']]
+    : [['15+', 'Years of experience'], ['60+', 'Product models'], ['1000+', 'Projects served'], ['30+', 'Provinces covered']];
+---
+
+<Base lang={lang} title={t('nav.about')}>
+  <PageHero title={t('nav.about')} crumbs={[{ href: localePath(lang, '/'), label: t('nav.home') }]} />
+  <section class="container-x grid gap-10 py-12 lg:grid-cols-3">
+    <div class="space-y-4 text-slate-600 lg:col-span-2">
+      <h2 class="section-title">{site.company[lang]}</h2>
+      {
+        lang === 'zh' ? (
+          <>
+            <p>{site.company.zh}专注于水处理在线分析仪表、流量/压力/液位仪表及工业阀门的研发、生产与销售，为市政水务、污水处理、化工、电力、食品制药等行业提供测量与控制整体解决方案。</p>
+            <p>公司拥有完整的生产与标定检测能力，产品通过 ISO 9001 质量体系认证，并可根据客户工况提供定制化选型服务。</p>
+          </>
+        ) : (
+          <>
+            <p>{site.company.en} develops, manufactures and sells online water quality analyzers, flow/pressure/level instruments and industrial valves, delivering measurement and control solutions to water utilities, wastewater, chemical, power, food and pharmaceutical industries.</p>
+            <p>With complete production and calibration capabilities and ISO 9001 certified quality management, we provide application-specific sizing and customization.</p>
+          </>
+        )
+      }
+    </div>
+    <div class="grid grid-cols-2 gap-4">
+      {
+        stats.map(([n, l]) => (
+          <div class="rounded-lg bg-brand-50 p-5 text-center">
+            <div class="text-3xl font-bold text-brand-600">{n}</div>
+            <div class="mt-1 text-sm text-slate-600">{l}</div>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+</Base>

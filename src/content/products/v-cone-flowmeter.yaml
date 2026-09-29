@@ -1,0 +1,47 @@
+model: "DH-VC"
+category: flow
+featured: false
+order: 12
+name:
+  zh: "V 锥流量计"
+  en: "V-Cone Flow Meter"
+summary:
+  zh: "DH-VC V 锥流量计，DN15~DN3000，适用于自来水计量、污水排放、工业过程等场合。"
+  en: "DH-VC V-Cone Flow Meter, DN15~DN3000, for Water metering, Effluent discharge, Industrial process and more."
+features:
+  zh:
+    - "无压损或低压损设计"
+    - "双向流量计量与累计"
+    - "自诊断与空管报警"
+    - "一体型/分体型可选"
+  en:
+    - "Low or no pressure loss"
+    - "Bi-directional measurement and totalizing"
+    - "Self-diagnosis and empty-pipe alarm"
+    - "Compact or remote version"
+applications:
+  zh:
+    - "自来水计量"
+    - "污水排放"
+    - "工业过程"
+    - "能源计量"
+  en:
+    - "Water metering"
+    - "Effluent discharge"
+    - "Industrial process"
+    - "Energy metering"
+specs:
+  - label: { zh: "公称通径", en: "Nominal size" }
+    value: "DN15~DN3000"
+  - label: { zh: "精度", en: "Accuracy" }
+    value: "±0.5%"
+  - label: { zh: "流速范围", en: "Velocity range" }
+    value: "0.1~15 m/s"
+  - label: { zh: "输出信号", en: "Output" }
+    value: "4-20mA / Pulse / RS485"
+  - label: { zh: "防护等级", en: "Protection" }
+    value: "IP65 / IP68"
+  - label: { zh: "供电", en: "Power supply" }
+    value: "AC220V / DC24V"
+tags: ["4-20mA", "RS485", "Pulse"]
+images: []

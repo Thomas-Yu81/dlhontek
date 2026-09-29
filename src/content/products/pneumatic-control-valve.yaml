@@ -1,0 +1,47 @@
+model: "DH-ZJHP"
+category: valves
+featured: false
+order: 6
+name:
+  zh: "气动薄膜调节阀"
+  en: "Pneumatic Diaphragm Control Valve"
+summary:
+  zh: "DH-ZJHP 气动薄膜调节阀，DN20~DN300，适用于给排水、暖通空调、化工等场合。"
+  en: "DH-ZJHP Pneumatic Diaphragm Control Valve, DN20~DN300, for Water & wastewater, HVAC, Chemical and more."
+features:
+  zh:
+    - "密封可靠，零泄漏"
+    - "结构紧凑，安装维护方便"
+    - "可选配限位开关与定位器"
+    - "支持 4-20mA 调节或开关量控制"
+  en:
+    - "Reliable, bubble-tight sealing"
+    - "Compact design, easy installation"
+    - "Optional limit switch box and positioner"
+    - "4-20mA modulating or on/off control"
+applications:
+  zh:
+    - "给排水"
+    - "暖通空调"
+    - "化工"
+    - "电力"
+  en:
+    - "Water & wastewater"
+    - "HVAC"
+    - "Chemical"
+    - "Power"
+specs:
+  - label: { zh: "公称通径", en: "Nominal size" }
+    value: "DN20~DN300"
+  - label: { zh: "公称压力", en: "Nominal pressure" }
+    value: "PN10 / PN16 / PN25"
+  - label: { zh: "阀体材质", en: "Body material" }
+    value: { zh: "球墨铸铁 / WCB / 304 / 316L", en: "Ductile iron / WCB / SS304 / SS316L" }
+  - label: { zh: "连接方式", en: "Connection" }
+    value: { zh: "法兰 / 对夹 / 螺纹", en: "Flanged / Wafer / Threaded" }
+  - label: { zh: "适用介质", en: "Medium" }
+    value: { zh: "水、蒸汽、油品、弱腐蚀介质", en: "Water, steam, oil, mildly corrosive media" }
+  - label: { zh: "驱动方式", en: "Actuation" }
+    value: { zh: "气动", en: "Pneumatic" }
+tags: ["PN16", "Flanged"]
+images: []

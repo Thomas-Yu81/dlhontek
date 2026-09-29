@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro';
+import { localePath, useT, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useT(lang);
+---
+
+<Base lang={lang} title={t('notfound.title')}>
+  <section class="container-x flex flex-col items-center py-24 text-center">
+    <div class="text-6xl font-bold text-brand-600">404</div>
+    <h1 class="mt-4 text-xl font-semibold text-slate-900">{t('notfound.title')}</h1>
+    <a href={localePath(lang, '/')} class="btn btn-primary mt-8">{t('notfound.back')}</a>
+  </section>
+</Base>

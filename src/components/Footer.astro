@@ -1,0 +1,54 @@
+---
+import { localePath, useT, type Lang } from '../i18n';
+import { categories } from '../data/categories';
+import { site } from '../data/site';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useT(lang);
+const year = new Date().getFullYear();
+---
+
+<footer class="bg-brand-900 text-slate-300">
+  <div class="container-x grid gap-8 py-12 md:grid-cols-4">
+    <div class="md:col-span-2">
+      <div class="text-lg font-bold text-white">{site.company[lang]}</div>
+      <p class="mt-2 text-sm">{site.slogan[lang]}</p>
+      <ul class="mt-4 space-y-1 text-sm">
+        <li>{t('contact.phone')}: <a href={`tel:${site.phone}`} class="hover:text-white">{site.phone}</a></li>
+        <li>{t('contact.email')}: <a href={`mailto:${site.email}`} class="hover:text-white">{site.email}</a></li>
+        <li>{t('contact.address')}: {site.address[lang]}</li>
+      </ul>
+    </div>
+    <div>
+      <div class="font-semibold text-white">{t('nav.products')}</div>
+      <ul class="mt-3 space-y-2 text-sm">
+        {
+          categories.map((c) => (
+            <li>
+              <a href={localePath(lang, `/products/${c.id}/`)} class="hover:text-white">
+                {c.name[lang]}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div>
+      <div class="font-semibold text-white">{t('contact.wechat')}</div>
+      <img src={site.wechatQr} alt="WeChat QR" class="mt-3 h-28 w-28 rounded bg-white p-1" />
+    </div>
+  </div>
+  <div class="border-t border-white/10 py-4 text-center text-xs">
+    © {year} {site.company[lang]} {t('footer.rights')}
+    {
+      lang === 'zh' && (
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener" class="ml-3 hover:text-white">
+          {site.icp}
+        </a>
+      )
+    }
+  </div>
+</footer>
