@@ -1,0 +1,29 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import InquiryForm from '../components/InquiryForm.astro';
+import { site } from '../data/site';
+import { localePath, useT, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useT(lang);
+---
+
+<Base lang={lang} title={t('nav.contact')}>
+  <PageHero title={t('nav.contact')} subtitle={t('home.ctaDesc')} crumbs={[{ href: localePath(lang, '/'), label: t('nav.home') }]} />
+  <section class="container-x grid gap-10 py-12 lg:grid-cols-3">
+    <div class="rounded-lg bg-white p-6 shadow-sm ring-1 ring-slate-200 lg:col-span-2">
+      <h2 class="section-title text-xl">{t('form.title')}</h2>
+      <div class="mt-6"><InquiryForm lang={lang} /></div>
+    </div>
+    <div class="space-y-4 text-sm">
+      <div><div class="font-semibold text-slate-900">{t('contact.phone')}</div><a href={`tel:${site.phone}`} class="text-brand-600">{site.phone}</a> / {site.mobile}</div>
+      <div><div class="font-semibold text-slate-900">{t('contact.email')}</div><a href={`mailto:${site.email}`} class="text-brand-600">{site.email}</a></div>
+      <div><div class="font-semibold text-slate-900">{t('contact.address')}</div>{site.address[lang]}</div>
+      <div><div class="font-semibold text-slate-900">{t('contact.wechat')}</div><img src={site.wechatQr} alt="WeChat QR" class="mt-2 h-32 w-32 rounded border border-slate-200" /></div>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,29 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import ProductGrid from '../components/ProductGrid.astro';
+import { getCategory, type CategoryId } from '../data/categories';
+import { getProducts, productsIn } from '../data/products';
+import { localePath, useT, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  category?: CategoryId;
+}
+const { lang, category } = Astro.props;
+const t = useT(lang);
+const all = await getProducts();
+const cat = category ? getCategory(category) : undefined;
+const products = category ? productsIn(all, category) : all;
+const crumbs = [
+  { href: localePath(lang, '/'), label: t('nav.home') },
+  { href: localePath(lang, '/products/'), label: t('nav.products') },
+];
+---
+
+<Base lang={lang} title={cat ? cat.name[lang] : t('products.title')} description={cat?.desc[lang]}>
+  <PageHero title={cat ? cat.name[lang] : t('products.title')} subtitle={cat?.desc[lang]} crumbs={crumbs} />
+  <section class="container-x py-10">
+    <ProductGrid lang={lang} products={products} current={category} />
+  </section>
+</Base>

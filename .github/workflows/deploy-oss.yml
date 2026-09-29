@@ -1,0 +1,36 @@
+name: Deploy to Aliyun OSS
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+concurrency: deploy-oss
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: ${{ vars.OSS_BUCKET != '' }}
+    env:
+      PUBLIC_INQUIRY_ENDPOINT: ${{ vars.PUBLIC_INQUIRY_ENDPOINT }}
+      PUBLIC_CHAT_SCRIPT: ${{ vars.PUBLIC_CHAT_SCRIPT }}
+      PUBLIC_BAIDU_TONGJI: ${{ vars.PUBLIC_BAIDU_TONGJI }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Install ossutil
+        run: |
+          curl -sSfL -o ossutil.zip https://gosspublic.alicdn.com/ossutil/1.7.19/ossutil-v1.7.19-linux-amd64.zip
+          unzip -q ossutil.zip && sudo mv ossutil-v1.7.19-linux-amd64/ossutil64 /usr/local/bin/ossutil
+      - name: Upload to OSS
+        env:
+          OSS_ENDPOINT: ${{ vars.OSS_ENDPOINT }}
+          OSS_BUCKET: ${{ vars.OSS_BUCKET }}
+          OSS_ACCESS_KEY_ID: ${{ secrets.OSS_ACCESS_KEY_ID }}
+          OSS_ACCESS_KEY_SECRET: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
+        run: |
+          ossutil config -e "$OSS_ENDPOINT" -i "$OSS_ACCESS_KEY_ID" -k "$OSS_ACCESS_KEY_SECRET" -c ~/.ossutilconfig
+          ossutil cp -r -f -u dist/ "oss://$OSS_BUCKET/" -c ~/.ossutilconfig
+          ossutil set-meta -r -f "oss://$OSS_BUCKET/" Cache-Control:no-cache --update --include "*.html" -c ~/.ossutilconfig

@@ -1,0 +1,48 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import { localePath, useT, type Lang } from '../i18n';
+import { getCategory, type CategoryId } from '../data/categories';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useT(lang);
+const items: { title: string; desc: string; cats: CategoryId[] }[] =
+  lang === 'zh'
+    ? [
+        { title: '市政供水', desc: '水源地、水厂工艺段及管网的浊度、余氯、pH 在线监测与流量计量。', cats: ['water-quality', 'flow'] },
+        { title: '污水处理', desc: '进出水 COD/氨氮/总磷监测、曝气池溶解氧控制、污泥浓度与液位测量。', cats: ['water-quality', 'pressure-level'] },
+        { title: '工业循环水', desc: '电导率、pH 联动加药控制，配合电动/气动阀门实现自动排污。', cats: ['water-quality', 'valves'] },
+        { title: '化工与电力', desc: '耐腐蚀调节阀、质量流量计、差压变送器，满足高温高压与防爆工况。', cats: ['valves', 'flow', 'pressure-level'] },
+      ]
+    : [
+        { title: 'Municipal Water Supply', desc: 'Online turbidity, chlorine and pH monitoring plus flow metering for sources, plants and networks.', cats: ['water-quality', 'flow'] },
+        { title: 'Wastewater Treatment', desc: 'Influent/effluent COD, ammonia and phosphorus monitoring, DO control and sludge/level measurement.', cats: ['water-quality', 'pressure-level'] },
+        { title: 'Industrial Cooling Water', desc: 'Conductivity and pH-based dosing control with electric/pneumatic valves for automatic blowdown.', cats: ['water-quality', 'valves'] },
+        { title: 'Chemical & Power', desc: 'Corrosion-resistant control valves, Coriolis meters and DP transmitters for harsh, hazardous conditions.', cats: ['valves', 'flow', 'pressure-level'] },
+      ];
+---
+
+<Base lang={lang} title={t('nav.solutions')}>
+  <PageHero title={t('nav.solutions')} crumbs={[{ href: localePath(lang, '/'), label: t('nav.home') }]} />
+  <section class="container-x grid gap-6 py-12 md:grid-cols-2">
+    {
+      items.map((s) => (
+        <div class="rounded-lg border border-slate-200 p-6">
+          <h2 class="text-lg font-semibold text-slate-900">{s.title}</h2>
+          <p class="mt-2 text-sm text-slate-600">{s.desc}</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            {s.cats.map((c) => (
+              <a href={localePath(lang, `/products/${c}/`)} class="rounded-full bg-brand-50 px-3 py-1 text-sm text-brand-700 hover:bg-brand-100">
+                {getCategory(c).name[lang]}
+              </a>
+            ))}
+            <a href={localePath(lang, '/contact/')} class="px-1 py-1 text-sm font-medium text-brand-600 hover:underline">{t('btn.inquiry')} →</a>
+          </div>
+        </div>
+      ))
+    }
+  </section>
+</Base>

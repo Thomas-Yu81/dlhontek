@@ -1,0 +1,29 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import { localePath, useT, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useT(lang);
+---
+
+<Base lang={lang} title={t('search.title')}>
+  <PageHero title={t('search.title')} crumbs={[{ href: localePath(lang, '/'), label: t('nav.home') }]} />
+  <section class="container-x py-10">
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+    <div id="search"></div>
+    {import.meta.env.DEV && <p class="mt-4 text-sm text-slate-500">{t('search.devNote')}</p>}
+    <script is:inline src="/pagefind/pagefind-ui.js"></script>
+    <script is:inline>
+      window.addEventListener('DOMContentLoaded', () => {
+        if (!window.PagefindUI) return;
+        const ui = new window.PagefindUI({ element: '#search', showSubResults: false, showImages: true });
+        const q = new URLSearchParams(location.search).get('q');
+        if (q) ui.triggerSearch(q);
+      });
+    </script>
+  </section>
+</Base>

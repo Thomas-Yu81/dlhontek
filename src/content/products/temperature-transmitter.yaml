@@ -1,0 +1,47 @@
+model: "DH-TT"
+category: pressure-level
+featured: false
+order: 8
+name:
+  zh: "一体化温度变送器"
+  en: "Integrated Temperature Transmitter"
+summary:
+  zh: "DH-TT 一体化温度变送器，-200~1300 ℃，适用于水厂液位、管网压力、储罐计量等场合。"
+  en: "DH-TT Integrated Temperature Transmitter, -200~1300 ℃, for Plant level, Network pressure, Tank gauging and more."
+features:
+  zh:
+    - "高稳定性传感器，长期漂移小"
+    - "LCD 现场显示，按键调零"
+    - "宽温度补偿"
+    - "可选防爆型"
+  en:
+    - "High-stability sensor with low long-term drift"
+    - "Local LCD with push-button zero"
+    - "Wide temperature compensation"
+    - "Explosion-proof option"
+applications:
+  zh:
+    - "水厂液位"
+    - "管网压力"
+    - "储罐计量"
+    - "锅炉"
+  en:
+    - "Plant level"
+    - "Network pressure"
+    - "Tank gauging"
+    - "Boilers"
+specs:
+  - label: { zh: "测量范围", en: "Range" }
+    value: "-200~1300 ℃"
+  - label: { zh: "精度", en: "Accuracy" }
+    value: "±0.2%"
+  - label: { zh: "输出信号", en: "Output" }
+    value: "4-20mA + HART / RS485"
+  - label: { zh: "过程连接", en: "Process connection" }
+    value: { zh: "M20×1.5 / G1/2 / 法兰", en: "M20×1.5 / G1/2 / Flange" }
+  - label: { zh: "防爆等级", en: "Explosion proof" }
+    value: "Ex ia IIC T6 / Ex d IIC T6"
+  - label: { zh: "防护等级", en: "Protection" }
+    value: "IP67"
+tags: ["4-20mA", "HART"]
+images: []

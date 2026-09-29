@@ -1,0 +1,93 @@
+---
+import { useT, type Lang } from '../i18n';
+import { site } from '../data/site';
+
+interface Props {
+  lang: Lang;
+  product?: string;
+}
+const { lang, product = '' } = Astro.props;
+const t = useT(lang);
+const input =
+  'w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-brand-500 focus:outline-none';
+---
+
+<form
+  data-inquiry
+  data-endpoint={site.inquiryEndpoint}
+  data-mailto={site.email}
+  data-ok={t('form.ok')}
+  data-fail={t('form.fail')}
+  data-sending={t('form.sending')}
+  class="grid gap-4 sm:grid-cols-2"
+>
+  <label class="text-sm">
+    <span class="mb-1 block font-medium">{t('form.name')} *</span>
+    <input name="name" required class={input} />
+  </label>
+  <label class="text-sm">
+    <span class="mb-1 block font-medium">{t('form.company')}</span>
+    <input name="company" class={input} />
+  </label>
+  <label class="text-sm">
+    <span class="mb-1 block font-medium">{t('form.phone')} *</span>
+    <input name="phone" type="tel" required class={input} />
+  </label>
+  <label class="text-sm">
+    <span class="mb-1 block font-medium">{t('form.email')}</span>
+    <input name="email" type="email" class={input} />
+  </label>
+  <label class="text-sm sm:col-span-2">
+    <span class="mb-1 block font-medium">{t('form.product')}</span>
+    <input name="product" value={product} data-product-field class={input} />
+  </label>
+  <label class="text-sm sm:col-span-2">
+    <span class="mb-1 block font-medium">{t('form.message')}</span>
+    <textarea name="message" rows="4" class={input}></textarea>
+  </label>
+  <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" />
+  <div class="flex items-center gap-4 sm:col-span-2">
+    <button type="submit" class="btn btn-primary">{t('form.submit')}</button>
+    <p data-status class="text-sm" role="status"></p>
+  </div>
+</form>
+
+<script>
+  for (const form of document.querySelectorAll<HTMLFormElement>('form[data-inquiry]')) {
+    const status = form.querySelector<HTMLElement>('[data-status]')!;
+    const productField = form.querySelector<HTMLInputElement>('[data-product-field]')!;
+    const fromQuery = new URLSearchParams(location.search).get('product');
+    if (fromQuery && !productField.value) productField.value = fromQuery;
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const { endpoint, mailto, ok, fail, sending } = form.dataset;
+      const data = new FormData(form);
+      if (data.get('_gotcha')) return;
+      if (!endpoint) {
+        const body = [...data.entries()]
+          .filter(([k]) => k !== '_gotcha')
+          .map(([k, v]) => `${k}: ${v}`)
+          .join('\n');
+        location.href = `mailto:${mailto}?subject=${encodeURIComponent(`Inquiry: ${data.get('product') ?? ''}`)}&body=${encodeURIComponent(body)}`;
+        return;
+      }
+      status.textContent = sending ?? '';
+      status.className = 'text-sm text-slate-500';
+      try {
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          body: data,
+          headers: { Accept: 'application/json' },
+        });
+        if (!res.ok) throw new Error(String(res.status));
+        form.reset();
+        status.textContent = ok ?? '';
+        status.className = 'text-sm text-accent-500';
+      } catch {
+        status.textContent = fail ?? '';
+        status.className = 'text-sm text-red-600';
+      }
+    });
+  }
+</script>

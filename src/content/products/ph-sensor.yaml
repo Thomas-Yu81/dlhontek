@@ -1,0 +1,47 @@
+model: "DH-PHS10"
+category: water-quality
+featured: false
+order: 17
+name:
+  zh: "工业 pH 电极"
+  en: "Industrial pH Electrode"
+summary:
+  zh: "DH-PHS10 工业 pH 电极，pH 0~14，适用于市政供水、污水处理、工业循环水等场合。"
+  en: "DH-PHS10 Industrial pH Electrode, pH 0~14, for Municipal water, Wastewater, Cooling water and more."
+features:
+  zh:
+    - "彩色液晶显示，中英文菜单"
+    - "双路继电器报警输出"
+    - "自动温度补偿"
+    - "数据存储与历史曲线"
+  en:
+    - "Color LCD with Chinese/English menu"
+    - "Two relay alarm outputs"
+    - "Automatic temperature compensation"
+    - "Data logging and trend curves"
+applications:
+  zh:
+    - "市政供水"
+    - "污水处理"
+    - "工业循环水"
+    - "地表水监测"
+  en:
+    - "Municipal water"
+    - "Wastewater"
+    - "Cooling water"
+    - "Surface water monitoring"
+specs:
+  - label: { zh: "测量范围", en: "Range" }
+    value: "pH 0~14"
+  - label: { zh: "精度", en: "Accuracy" }
+    value: "±1% F.S."
+  - label: { zh: "输出信号", en: "Output" }
+    value: "4-20mA / RS485 Modbus RTU"
+  - label: { zh: "供电", en: "Power supply" }
+    value: { zh: "AC220V / DC24V", en: "AC220V / DC24V" }
+  - label: { zh: "防护等级", en: "Protection" }
+    value: "IP65 / IP68"
+  - label: { zh: "工作温度", en: "Operating temp." }
+    value: "0~60 ℃"
+tags: ["4-20mA", "RS485", "IP68"]
+images: []

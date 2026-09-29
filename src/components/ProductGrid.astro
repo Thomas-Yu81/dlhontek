@@ -1,0 +1,122 @@
+---
+import ProductCard from './ProductCard.astro';
+import type { Product } from '../data/products';
+import { categories, type CategoryId } from '../data/categories';
+import { useT, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  products: Product[];
+  current?: CategoryId;
+}
+const { lang, products, current } = Astro.props;
+const t = useT(lang);
+const tags = [...new Set(products.flatMap((p) => p.data.tags))].sort();
+const shownCats = current ? [] : categories;
+---
+
+<div data-product-grid class="space-y-6">
+  <div class="flex flex-col gap-4 rounded-lg border border-slate-200 bg-slate-50 p-4">
+    <div class="flex flex-wrap items-center gap-3">
+      <input
+        type="search"
+        data-keyword
+        placeholder={t('products.keyword')}
+        class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-brand-500 focus:outline-none sm:w-72"
+      />
+      {
+        shownCats.length > 0 && (
+          <div class="flex flex-wrap gap-2" data-cats>
+            <button type="button" data-cat="" class="chip chip-on">
+              {t('products.all')}
+            </button>
+            {shownCats.map((c) => (
+              <button type="button" data-cat={c.id} class="chip">
+                {c.name[lang]}
+              </button>
+            ))}
+          </div>
+        )
+      }
+    </div>
+    {
+      tags.length > 0 && (
+        <div class="flex flex-wrap items-center gap-2" data-tags>
+          <span class="text-xs font-medium text-slate-500">{t('products.filter')}:</span>
+          {tags.map((tag) => (
+            <button type="button" data-tag={tag} class="chip text-xs">
+              {tag}
+            </button>
+          ))}
+        </div>
+      )
+    }
+  </div>
+  <p class="text-sm text-slate-500" data-count data-template={t('products.count', { n: '{n}' })}>
+    {t('products.count', { n: products.length })}
+  </p>
+  <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    {products.map((p) => <ProductCard lang={lang} product={p} />)}
+  </div>
+  <p class="hidden py-12 text-center text-slate-500" data-empty>{t('products.empty')}</p>
+</div>
+
+<style>
+  @reference '../styles/global.css';
+  .chip {
+    @apply rounded-full border border-slate-300 bg-white px-3 py-1 text-sm text-slate-600 transition hover:border-brand-500 hover:text-brand-600;
+  }
+  .chip-on,
+  .chip[aria-pressed='true'] {
+    @apply border-brand-600 bg-brand-600 text-white hover:text-white;
+  }
+</style>
+
+<script>
+  for (const root of document.querySelectorAll<HTMLElement>('[data-product-grid]')) {
+    const cards = [...root.querySelectorAll<HTMLElement>('[data-product]')];
+    const keyword = root.querySelector<HTMLInputElement>('[data-keyword]')!;
+    const count = root.querySelector<HTMLElement>('[data-count]')!;
+    const empty = root.querySelector<HTMLElement>('[data-empty]')!;
+    const catBtns = [...root.querySelectorAll<HTMLButtonElement>('[data-cat]')];
+    const tagBtns = [...root.querySelectorAll<HTMLButtonElement>('[data-tag]')];
+    const params = new URLSearchParams(location.search);
+    let cat = params.get('cat') ?? '';
+    const activeTags = new Set<string>();
+
+    const apply = () => {
+      const q = keyword.value.trim().toLowerCase();
+      let n = 0;
+      for (const c of cards) {
+        const tags = (c.dataset.tags ?? '').split(',');
+        const ok =
+          (!cat || c.dataset.category === cat) &&
+          (!q || (c.dataset.search ?? '').includes(q)) &&
+          [...activeTags].every((t) => tags.includes(t));
+        c.hidden = !ok;
+        if (ok) n++;
+      }
+      count.textContent = (count.dataset.template ?? '').replace('{n}', String(n));
+      empty.classList.toggle('hidden', n > 0);
+      catBtns.forEach((b) => b.classList.toggle('chip-on', b.dataset.cat === cat));
+      tagBtns.forEach((b) => b.setAttribute('aria-pressed', String(activeTags.has(b.dataset.tag!))));
+    };
+
+    keyword.addEventListener('input', apply);
+    catBtns.forEach((b) =>
+      b.addEventListener('click', () => {
+        cat = b.dataset.cat ?? '';
+        apply();
+      }),
+    );
+    tagBtns.forEach((b) =>
+      b.addEventListener('click', () => {
+        const tag = b.dataset.tag!;
+        if (activeTags.has(tag)) activeTags.delete(tag);
+        else activeTags.add(tag);
+        apply();
+      }),
+    );
+    apply();
+  }
+</script>

@@ -1,0 +1,35 @@
+---
+import { productImage, productUrl, type Product } from '../data/products';
+import { useT, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  product: Product;
+}
+const { lang, product: p } = Astro.props;
+const t = useT(lang);
+---
+
+<a
+  href={productUrl(lang, p)}
+  class="group flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white transition hover:-translate-y-0.5 hover:border-brand-500 hover:shadow-md"
+  data-product
+  data-category={p.data.category}
+  data-tags={p.data.tags.join(',')}
+  data-search={`${p.data.model} ${p.data.name.zh} ${p.data.name.en}`.toLowerCase()}
+>
+  <div class="aspect-[4/3] bg-slate-50">
+    <img
+      src={productImage(p)}
+      alt={p.data.name[lang]}
+      loading="lazy"
+      class="h-full w-full object-contain p-4 transition group-hover:scale-105"
+    />
+  </div>
+  <div class="flex flex-1 flex-col p-4">
+    <div class="text-xs font-medium text-brand-600">{p.data.model}</div>
+    <h3 class="mt-1 font-semibold text-slate-900 group-hover:text-brand-600">{p.data.name[lang]}</h3>
+    <p class="mt-2 line-clamp-2 flex-1 text-sm text-slate-500">{p.data.summary[lang]}</p>
+    <span class="mt-3 text-sm font-medium text-brand-600">{t('btn.more')} →</span>
+  </div>
+</a>

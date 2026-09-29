@@ -1,0 +1,9 @@
+---
+import View from '../../../views/Products.astro';
+import { categoryIds, type CategoryId } from '../../../data/categories';
+
+export const getStaticPaths = () => categoryIds.map((category) => ({ params: { category } }));
+const category = Astro.params.category as CategoryId;
+---
+
+<View lang="zh" category={category} />
