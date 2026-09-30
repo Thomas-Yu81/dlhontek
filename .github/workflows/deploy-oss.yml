@@ -8,10 +8,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     if: ${{ vars.OSS_BUCKET != '' }}
-    #env:
-      #PUBLIC_INQUIRY_ENDPOINT: ${{ vars.PUBLIC_INQUIRY_ENDPOINT }}
-      #PUBLIC_CHAT_SCRIPT: ${{ vars.PUBLIC_CHAT_SCRIPT }}
-      #PUBLIC_BAIDU_TONGJI: ${{ vars.PUBLIC_BAIDU_TONGJI }}
+    env:
+      PUBLIC_INQUIRY_ENDPOINT: ${{ vars.PUBLIC_INQUIRY_ENDPOINT }}
+      PUBLIC_CHAT_SCRIPT: ${{ vars.PUBLIC_CHAT_SCRIPT }}
+      PUBLIC_BAIDU_TONGJI: ${{ vars.PUBLIC_BAIDU_TONGJI }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
