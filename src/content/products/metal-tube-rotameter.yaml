@@ -32,16 +32,16 @@ applications:
     - "Energy metering"
 specs:
   - label: { zh: "公称通径", en: "Nominal size" }
-    value: "DN15~DN200"
+    value: { zh: "DN15~DN200", en: "DN15~DN200" }
   - label: { zh: "精度", en: "Accuracy" }
-    value: "±1.5%"
+    value: { zh: "±1.5%", en: "±1.5%" }
   - label: { zh: "流速范围", en: "Velocity range" }
-    value: "0.1~15 m/s"
+    value: { zh: "0.1~15 m/s", en: "0.1~15 m/s" }
   - label: { zh: "输出信号", en: "Output" }
-    value: "4-20mA / Pulse / RS485"
+    value: { zh: "4-20mA / Pulse / RS485", en: "4-20mA / Pulse / RS485" }
   - label: { zh: "防护等级", en: "Protection" }
-    value: "IP65 / IP68"
+    value: { zh: "IP65 / IP68", en: "IP65 / IP68" }
   - label: { zh: "供电", en: "Power supply" }
-    value: "AC220V / DC24V"
+    value: { zh: "AC220V / DC24V", en: "AC220V / DC24V" }
 tags: ["4-20mA", "RS485", "Pulse"]
 images: []

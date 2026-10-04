@@ -46,6 +46,17 @@ npm run import:docx -- ./en/DH-LDE.docx --category flow --lang en   # 英文版�
 
 导入后需人工补充英文名称、参数表（specs）、特点和标签。
 
+### 在线后台（Pages CMS）
+
+仓库根目录的 `.pages.yml` 定义了 [Pages CMS](https://pagescms.org) 的编辑表单（产品中英文字段、参数表、图片、样本 PDF）。
+
+1. 打开 https://app.pagescms.org ，用 GitHub 账号登录，按提示给 `dlhontek` 仓库安装 Pages CMS GitHub App。
+2. 选择仓库和 `main` 分支，左侧「产品」即可新增、编辑或删除产品；图片上传到 `public/images/products/`，PDF 上传到 `public/files/`。
+3. 每次保存都会直接提交到 GitHub，`main` 上的提交会自动部署到 OSS（约 2 分钟）。
+4. 不熟悉 GitHub 的同事可在 Pages CMS 的 Collaborators 里用邮箱邀请。
+
+新建产品时「文件名」就是网址的一部分，请用英文小写加连字符（如 `electric-butterfly-valve`）。
+
 ## 可选功能（环境变量，见 .env.example）
 
 | 变量 | 作用 |

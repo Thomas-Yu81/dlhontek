@@ -32,16 +32,16 @@ applications:
     - "Boilers"
 specs:
   - label: { zh: "测量范围", en: "Range" }
-    value: "0~200 m"
+    value: { zh: "0~200 m", en: "0~200 m" }
   - label: { zh: "精度", en: "Accuracy" }
-    value: "±0.25%"
+    value: { zh: "±0.25%", en: "±0.25%" }
   - label: { zh: "输出信号", en: "Output" }
-    value: "4-20mA + HART / RS485"
+    value: { zh: "4-20mA + HART / RS485", en: "4-20mA + HART / RS485" }
   - label: { zh: "过程连接", en: "Process connection" }
     value: { zh: "M20×1.5 / G1/2 / 法兰", en: "M20×1.5 / G1/2 / Flange" }
   - label: { zh: "防爆等级", en: "Explosion proof" }
-    value: "Ex ia IIC T6 / Ex d IIC T6"
+    value: { zh: "Ex ia IIC T6 / Ex d IIC T6", en: "Ex ia IIC T6 / Ex d IIC T6" }
   - label: { zh: "防护等级", en: "Protection" }
-    value: "IP67"
+    value: { zh: "IP67", en: "IP67" }
 tags: ["4-20mA", "HART"]
 images: []
