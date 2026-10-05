@@ -32,16 +32,16 @@ applications:
     - "Surface water monitoring"
 specs:
   - label: { zh: "测量范围", en: "Range" }
-    value: "pH 0~14"
+    value: { zh: "pH 0~14", en: "pH 0~14" }
   - label: { zh: "精度", en: "Accuracy" }
-    value: "±1% F.S."
+    value: { zh: "±1% F.S.", en: "±1% F.S." }
   - label: { zh: "输出信号", en: "Output" }
-    value: "4-20mA / RS485 Modbus RTU"
+    value: { zh: "4-20mA / RS485 Modbus RTU", en: "4-20mA / RS485 Modbus RTU" }
   - label: { zh: "供电", en: "Power supply" }
     value: { zh: "AC220V / DC24V", en: "AC220V / DC24V" }
   - label: { zh: "防护等级", en: "Protection" }
-    value: "IP65 / IP68"
+    value: { zh: "IP65 / IP68", en: "IP65 / IP68" }
   - label: { zh: "工作温度", en: "Operating temp." }
-    value: "0~60 ℃"
+    value: { zh: "0~60 ℃", en: "0~60 ℃" }
 tags: ["4-20mA", "RS485", "IP68"]
 images: []

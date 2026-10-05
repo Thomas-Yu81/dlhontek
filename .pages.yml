@@ -1,0 +1,110 @@
+media:
+  - name: images
+    label: 产品图片
+    input: public/images/products
+    output: /images/products
+    categories: [image]
+    rename: safe
+  - name: files
+    label: 资料下载
+    input: public/files
+    output: /files
+    categories: [document]
+    rename: safe
+
+components:
+  zhEn:
+    type: object
+    fields:
+      - { name: zh, label: 中文, type: string, required: true }
+      - { name: en, label: English, type: string, required: true }
+  zhEnText:
+    type: object
+    fields:
+      - { name: zh, label: 中文, type: text, required: true }
+      - { name: en, label: English, type: text, required: true }
+  zhEnList:
+    type: object
+    fields:
+      - { name: zh, label: 中文, type: string, list: true }
+      - { name: en, label: English, type: string, list: true }
+
+content:
+  - name: products
+    label: 产品
+    type: collection
+    path: src/content/products
+    format: yaml
+    filename:
+      template: "{primary}.yaml"
+      field: create
+    view:
+      primary: model
+      fields: [model, name.zh, category, featured, order]
+      sort: [category, order, model]
+      search: [model, name.zh, name.en]
+      default:
+        sort: order
+        order: asc
+    fields:
+      - name: model
+        label: 型号
+        type: string
+        required: true
+      - name: category
+        label: 分类
+        type: select
+        required: true
+        options:
+          values:
+            - { name: water-quality, label: 水质分析仪表 }
+            - { name: valves, label: 工业阀门 }
+            - { name: flow, label: 流量仪表 }
+            - { name: pressure-level, label: 压力/液位/温度仪表 }
+      - name: featured
+        label: 常用产品（首页展示）
+        type: boolean
+        default: false
+      - name: order
+        label: 排序（越小越靠前）
+        type: number
+        default: 100
+      - { name: name, label: 产品名称, component: zhEn }
+      - { name: summary, label: 简介, component: zhEnText }
+      - { name: features, label: 产品特点, component: zhEnList }
+      - { name: applications, label: 应用领域, component: zhEnList }
+      - name: specs
+        label: 技术参数
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{fields.label.zh}：{fields.value.zh}"
+        fields:
+          - { name: label, label: 参数名, component: zhEn }
+          - { name: value, label: 参数值, component: zhEn }
+      - name: tags
+        label: 筛选标签
+        type: string
+        list: true
+        description: 例如 4-20mA、RS485、PN16、Ex
+      - name: images
+        label: 产品图片
+        type: image
+        description: 第一张为主图；留空时显示分类占位图
+        options:
+          media: images
+          multiple: { max: 8 }
+          unique: true
+      - name: datasheet
+        label: 样本 PDF
+        type: file
+        options:
+          media: files
+          extensions: [pdf]
+      - name: body
+        label: 详情正文（HTML，Word 导入生成）
+        type: object
+        fields:
+          - { name: zh, label: 中文, type: code, options: { format: html } }
+          - { name: en, label: English, type: code, options: { format: html } }

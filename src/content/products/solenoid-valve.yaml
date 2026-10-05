@@ -32,9 +32,9 @@ applications:
     - "Power"
 specs:
   - label: { zh: "公称通径", en: "Nominal size" }
-    value: "DN8~DN100"
+    value: { zh: "DN8~DN100", en: "DN8~DN100" }
   - label: { zh: "公称压力", en: "Nominal pressure" }
-    value: "PN10 / PN16 / PN25"
+    value: { zh: "PN10 / PN16 / PN25", en: "PN10 / PN16 / PN25" }
   - label: { zh: "阀体材质", en: "Body material" }
     value: { zh: "球墨铸铁 / WCB / 304 / 316L", en: "Ductile iron / WCB / SS304 / SS316L" }
   - label: { zh: "连接方式", en: "Connection" }
