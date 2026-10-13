@@ -1,0 +1,28 @@
+model: "HTDS-100"
+category: flow
+featured: false
+order: 200
+name:
+  zh: "HTDS-100超声波热量计"
+  en: "HTDS-100 Ultrasonic Heat Meter"
+summary:
+  zh: "HTDS-100系列超声波热量计是在固定式超声波流量计上加配一对温度传感器（即超声波热量计+温度传感器=超声波热量计），通过采用国际标准热焙值热量计算公式（焙差法）而实现热量测量的。为满足用户现场不同工况的需要，该系列产品分为一体式、分体式、模块式供用户选择。"
+  en: "The HTDS-100 ultrasonic heat meter adds a pair of temperature sensors to a fixed ultrasonic flowmeter and measures heat using the international standard enthalpy-difference formula. Integral, remote and module versions are available."
+features:
+  zh: []
+  en: []
+applications:
+  zh: []
+  en: []
+specs: []
+tags: []
+images:
+  - "/images/products/htds-100/htds-100-1.jpg"
+datasheet: "/files/htds-ultrasonic-flowmeter-heat-meter-manual.pdf"
+body:
+  zh: |-
+    <h2>技术参数</h2>
+    <img src="/images/products/htds-100/htds-100-1.jpg" alt="HTDS-100超声波热量计 技术参数">
+  en: |-
+    <h2>Specifications</h2>
+    <img src="/images/products/htds-100/htds-100-1.jpg" alt="HTDS-100 Specifications">

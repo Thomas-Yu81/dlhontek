@@ -1,0 +1,77 @@
+model: "HT-UPD"
+category: concentration
+featured: true
+order: 10
+name:
+  zh: "HT-UPD系列超声波矿浆浓度计"
+  en: "HT-UPD Ultrasonic Slurry Concentration Meter"
+summary:
+  zh: "HT-UPD系列超声波矿浆浓度计是为选矿、洗煤、冶金、造纸、污泥处理等过程处理中高浓度浆料监测而设计的在线监测仪表。可以实时在线监测0%至70%的浆料浓度变化并实现相关工艺过程自动控制。"
+  en: "The HT-UPD ultrasonic slurry concentration meter is an online instrument designed for monitoring high-concentration slurries in mineral processing, coal washing, metallurgy, papermaking and sludge treatment. It monitors slurry concentration from 0% to 70% in real time and enables automatic process control."
+features:
+  zh:
+    - "超声波测量方法，无射线污染，绝对安全"
+    - "超声波发射能量自动调节，能够适应各种测量介质和宽广的量程"
+    - "先进的电路设计和软件算法，能够消除现场干扰，稳定精确测量"
+    - "管道插入式安装或者管道法兰式安装可满足不同现场要求"
+    - "大屏幕液晶显示，可显示趋势线"
+    - "测量单位%或g/l可现场选择"
+    - "中文菜单，操作简便"
+    - "4～20mA隔离电流输出"
+    - "可选现场总线接口"
+    - "设定限值报警和故障报警继电器输出"
+  en:
+    - "Ultrasonic measurement with no radiation, completely safe"
+    - "Automatic adjustment of ultrasonic transmit power for various media and wide ranges"
+    - "Advanced circuitry and algorithms reject field interference for stable, accurate measurement"
+    - "Pipe insertion or flange mounting to suit different sites"
+    - "Large LCD with trend display"
+    - "Unit selectable on site: % or g/L"
+    - "Chinese menu, easy operation"
+    - "Isolated 4-20mA current output"
+    - "Optional fieldbus interface"
+    - "Relay outputs for limit and fault alarms"
+applications:
+  zh: []
+  en: []
+specs:
+  - label: { zh: "量程", en: "Range" }
+    value: { zh: "0-70%", en: "0-70%" }
+  - label: { zh: "分辨率", en: "Resolution" }
+    value: { zh: "0.05%", en: "0.05%" }
+  - label: { zh: "测量精度", en: "Accuracy" }
+    value: { zh: "±3%FS，±5%FS", en: "±3%FS, ±5%FS" }
+  - label: { zh: "功率", en: "Power consumption" }
+    value: { zh: "≤15W", en: "≤15W" }
+  - label: { zh: "显示", en: "Display" }
+    value: { zh: "LCD", en: "LCD" }
+  - label: { zh: "信号输出", en: "Signal output" }
+    value: { zh: "4～20mA，负载上限750Ω", en: "4-20mA, max. load 750Ω" }
+  - label: { zh: "开关输出", en: "Switch output" }
+    value: { zh: "2个继电器、容量220V/2A", en: "2 relays, 220V/2A" }
+  - label: { zh: "防护等级", en: "Protection" }
+    value: { zh: "IP68", en: "IP68" }
+  - label: { zh: "工作电源", en: "Power supply" }
+    value: { zh: "220VAC+10%", en: "220VAC+10%" }
+  - label: { zh: "安装方式", en: "Installation" }
+    value: { zh: "浸没式、管段式和插入式", en: "Submersion, spool or insertion" }
+  - label: { zh: "信号线缆", en: "Signal cable" }
+    value: { zh: "10m(标配）可延长", en: "10 m (standard), extendable" }
+tags: ["4-20mA", "IP68"]
+images:
+  - "/images/products/ht-upd/ht-upd-1.jpg"
+body:
+  zh: |-
+    <h2>安装使用</h2>
+    <p>（1）浸没式安装方式</p>
+    <p>浸没式传感器的最小浸没深度为30cm，或者浸没至取样时通常所达到的深度，并避免强光直射。</p>
+    <p>（2）管道式安装方式</p>
+    <p>管道式传感器有法兰连接安装和插入式安装两种方式，法兰连接安装方式用法兰将传感器管段嵌入管道中；插入式安装直接在原有管道上打孔，将传感器通过底座和球阀插入管道中。</p>
+    <img src="/images/products/ht-upd/ht-upd-2.png" alt="HT-UPD系列超声波矿浆浓度计 安装使用">
+  en: |-
+    <h2>Installation &amp; Use</h2>
+    <p>(1) Submersion installation</p>
+    <p>The submersion sensor must be immersed at least 30 cm deep, or to the depth normally reached when sampling, and kept out of strong direct light.</p>
+    <p>(2) Pipe installation</p>
+    <p>Pipe sensors can be flange-mounted or inserted. Flange mounting fits the sensor spool into the pipeline; insertion mounting drills a hole in the existing pipe and inserts the sensor through a base and ball valve.</p>
+    <img src="/images/products/ht-upd/ht-upd-2.png" alt="HT-UPD Installation &amp; Use">

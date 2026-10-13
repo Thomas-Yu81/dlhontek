@@ -1,4 +1,4 @@
-export const categoryIds = ['water-quality', 'valves', 'flow', 'pressure-level'] as const;
+export const categoryIds = ['concentration', 'water-quality', 'flow', 'level'] as const;
 export type CategoryId = (typeof categoryIds)[number];
 
 export interface Category {
@@ -10,40 +10,40 @@ export interface Category {
 
 export const categories: Category[] = [
   {
+    id: 'concentration',
+    name: { zh: '浓度测量仪表', en: 'Concentration Meters' },
+    desc: {
+      zh: '超声波矿浆浓度计、超声波污泥浓度计',
+      en: 'Ultrasonic slurry and sludge concentration meters',
+    },
+    placeholder: '/images/placeholders/concentration.svg',
+  },
+  {
     id: 'water-quality',
     name: { zh: '水质分析仪表', en: 'Water Quality Analyzers' },
     desc: {
-      zh: 'pH/ORP、电导率、溶解氧、浊度、余氯、COD、氨氮等在线水质监测',
-      en: 'Online monitoring of pH/ORP, conductivity, DO, turbidity, chlorine, COD, ammonia and more',
+      zh: 'pH/ORP、溶解氧、余氯、浊度/MLSS、泥水界面在线及便携式分析仪',
+      en: 'Online and portable pH/ORP, DO, residual chlorine, turbidity/MLSS and sludge blanket analyzers',
     },
     placeholder: '/images/placeholders/water-quality.svg',
   },
   {
-    id: 'valves',
-    name: { zh: '工业阀门', en: 'Industrial Valves' },
-    desc: {
-      zh: '电动/气动蝶阀、球阀、调节阀、电磁阀及执行器、定位器',
-      en: 'Electric/pneumatic butterfly, ball and control valves, solenoid valves, actuators and positioners',
-    },
-    placeholder: '/images/placeholders/valves.svg',
-  },
-  {
     id: 'flow',
-    name: { zh: '流量仪表', en: 'Flow Meters' },
+    name: { zh: '流量测量仪表', en: 'Flow Meters' },
     desc: {
-      zh: '电磁、超声波、涡街、涡轮、质量流量计及明渠流量计',
-      en: 'Electromagnetic, ultrasonic, vortex, turbine, Coriolis and open-channel flow meters',
+      zh: '超声波、电磁、涡街、涡轮流量计，明渠流量计及超声波热量计',
+      en: 'Ultrasonic, electromagnetic, vortex and turbine flowmeters, open channel flowmeters and heat meters',
     },
     placeholder: '/images/placeholders/flow.svg',
   },
   {
-    id: 'pressure-level',
-    name: { zh: '压力/液位/温度仪表', en: 'Pressure, Level & Temperature' },
+    id: 'level',
+    name: { zh: '液位测量仪表', en: 'Level Meters' },
     desc: {
-      zh: '压力变送器、差压变送器、雷达/超声波/投入式液位计、温度变送器',
-      en: 'Pressure & DP transmitters, radar/ultrasonic/submersible level meters, temperature transmitters',
+      zh: '超声波液（物）位计、液位差计、高频雷达水位计',
+      en: 'Ultrasonic level and level difference meters, high-frequency radar level meters',
     },
-    placeholder: '/images/placeholders/pressure-level.svg',
+    placeholder: '/images/placeholders/level.svg',
   },
 ];
 

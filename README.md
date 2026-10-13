@@ -1,6 +1,6 @@
-# DLHONTEK 产品展示网站
+# 大连宏泰仪器（HOGT）产品展示网站
 
-仪器仪表类工业产品（水质分析仪表、工业阀门、流量仪表、压力/液位/温度仪表）静态产品展示网站，中英双语，部署于阿里云 OSS + CDN。
+仪器仪表类工业产品（浓度、水质分析、流量、液位测量仪表）静态产品展示网站，中英双语，部署于阿里云 OSS + CDN。
 
 技术栈：Astro 5（纯静态输出）· Tailwind CSS 4 · Pagefind（站内搜索）· @astrojs/sitemap
 
@@ -40,7 +40,7 @@ scripts/import-docx.mjs     Word 产品资料导入脚本
 
 ```bash
 npm run import:docx -- ./资料/DH-LDE电磁流量计.docx --category flow
-npm run import:docx -- ./资料/阀门/ --category valves          # 整个目录
+npm run import:docx -- ./资料/流量/ --category flow          # 整个目录
 npm run import:docx -- ./en/DH-LDE.docx --category flow --lang en   # 英文版正文
 ```
 

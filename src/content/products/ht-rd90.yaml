@@ -1,0 +1,65 @@
+model: "HT-RD90"
+category: level
+featured: true
+order: 230
+name:
+  zh: "HT-RD90系列高频水利雷达"
+  en: "HT-RD90 High-frequency Hydrological Radar"
+summary:
+  zh: "雷达液位计天线发射及窄的微波脉冲，这个脉冲以光速在空间传播，遇到被测介质表面，其部分能量被反射回来，被同一天线接收。发射脉冲与接收脉冲的时间间隔与天线到被测介质表面的距离成正比。由于电磁波的传播速度极高，发射脉冲与接收脉冲的时间间隔很小（纳秒量级）很难确认，90X系列26G雷达液位计采用一种特殊的解调技术，可以准确识别发射脉冲与接收脉冲的时间间隔，从而进一步计算出天线到被测介质表面的距离。"
+  en: "The radar antenna emits very narrow microwave pulses that travel at the speed of light and are partly reflected by the medium surface back to the same antenna. The time between transmitted and received pulses is proportional to the distance to the surface. Because this interval is only nanoseconds, the 90X series 26 GHz radar uses a special demodulation technique to identify it accurately and calculate the distance."
+features:
+  zh: []
+  en: []
+applications:
+  zh: []
+  en: []
+specs:
+  - label: { zh: "测量范围", en: "Measuring range" }
+    value: { zh: "HT-RD908：0-30m；HT-RD909：0-70m", en: "HT-RD908: 0-30m; HT-RD909: 0-70m" }
+  - label: { zh: "过程连接", en: "Process connection" }
+    value: { zh: "螺纹G1½ʺ A / 支架/法兰", en: "Thread G1½\" A / bracket / flange" }
+  - label: { zh: "过程温度", en: "Process temperature" }
+    value: { zh: "-40～100℃", en: "-40～100℃" }
+  - label: { zh: "测量精度", en: "Accuracy" }
+    value: { zh: "±3mm", en: "±3mm" }
+  - label: { zh: "频率范围", en: "Frequency" }
+    value: { zh: "26GHz", en: "26GHz" }
+  - label: { zh: "防护等级", en: "Protection" }
+    value: { zh: "IP67 / IP65", en: "IP67 / IP65" }
+  - label: { zh: "信号输出", en: "Signal output" }
+    value: { zh: "RS485/Modbus 协议", en: "RS485 / Modbus" }
+  - label: { zh: "现场显示", en: "Local display" }
+    value: { zh: "可选", en: "Optional" }
+  - label: { zh: "工作电源", en: "Power supply" }
+    value: { zh: "DC（6—24V）/四线", en: "6-24VDC / 4-wire" }
+  - label: { zh: "外壳材质", en: "Housing material" }
+    value: { zh: "铝/塑料", en: "Aluminum / plastic" }
+tags: ["RS485", "Modbus", "IP65", "IP67"]
+images:
+  - "/images/products/ht-rd90/ht-rd90-1.jpg"
+body:
+  zh: |-
+    <h2>行业应用</h2>
+    <p>行业推荐的雷达液位计采用了26GHz的发射频率，因而具有：</p>
+    <ul><li>波束角小，能量集中，具有更强抗干扰能力，大大提高了测量准确度和可靠性</li><li>天线尺寸小，便于安装和加防尘罩等天线防护装置</li><li>重量轻约1KG，便于安装</li><li>测量范围可达70米，覆盖大型水库等水位测量</li><li>多种输出电路接口与采集系统配合</li><li>采用脉冲工作方式，雷达液位计发射功率极低，对人体及环境均无伤害</li></ul>
+    <h2>安装使用</h2>
+    <ul><li>安装前的准备</li></ul>
+    <p>请注意以下事项，以确保仪表能正确安装：</p>
+    <p>请预留足够的安装空间。</p>
+    <p>请避免强烈震动的安装场合。</p>
+    <ul><li>图示说明及安装位置</li></ul>
+    <p>注：雷达天线发射微波脉冲时，都有一定发射角。从天线下缘到被测介质表面之间，及发射微波波束所辐射的区域内不得有障碍物。</p>
+    <img src="/images/products/ht-rd90/ht-rd90-2.jpg" alt="HT-RD90系列高频水利雷达 安装使用">
+  en: |-
+    <h2>Industry Applications</h2>
+    <p>This radar level meter uses a 26 GHz frequency, which provides:</p>
+    <ul><li>Narrow beam and concentrated energy for strong anti-interference, accuracy and reliability</li><li>Small antenna, easy to install and fit with dust covers</li><li>Light weight (about 1 kg), easy to install</li><li>Range up to 70 m for large reservoirs</li><li>Multiple output interfaces for data acquisition systems</li><li>Pulsed operation with very low emission, harmless to people and the environment</li></ul>
+    <h2>Installation &amp; Use</h2>
+    <ul><li>Before installation</li></ul>
+    <p>Observe the following to ensure correct installation:</p>
+    <p>Leave enough installation space.</p>
+    <p>Avoid locations with strong vibration.</p>
+    <ul><li>Diagram and mounting position</li></ul>
+    <p>Note: the antenna emits microwave pulses at a beam angle. Keep the area between the antenna and the medium surface, and within the beam, free of obstacles.</p>
+    <img src="/images/products/ht-rd90/ht-rd90-2.jpg" alt="HT-RD90 Installation &amp; Use">

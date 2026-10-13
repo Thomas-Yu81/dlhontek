@@ -1,0 +1,60 @@
+model: "HTCN-501"
+category: water-quality
+featured: true
+order: 40
+name:
+  zh: "HTCN-501系列PH/ORP"
+  en: "HTCN-501 pH/ORP Analyzer"
+summary:
+  zh: "HTCN-501具有高智能、环境适应性强、清晰的显示、简易的操作等特点，广泛应用于火电、化工化肥、冶金、环保、制药、生化、食品和自来水等领域。"
+  en: "The HTCN-501 is an intelligent, robust analyzer with a clear display and simple operation, widely used in thermal power, chemicals and fertilizers, metallurgy, environmental protection, pharmaceuticals, biochemistry, food and drinking water."
+features:
+  zh:
+    - "多参数同屏显示"
+    - "中文菜单，操作简单"
+    - "25℃折算，可测多种水质,RS485通讯接"
+    - "采用光电耦合隔离技术的电流输出"
+  en:
+    - "Multiple parameters on one screen"
+    - "Chinese menu, easy operation"
+    - "Referenced to 25℃ for various water types; RS485 interface"
+    - "Opto-isolated current output"
+applications:
+  zh: []
+  en: []
+specs:
+  - label: { zh: "测量范围", en: "Measuring range" }
+    value: { zh: "HTCN-501：0.00～14.00pH；HTCN-501（ORP）：±1999mV", en: "HTCN-501: 0.00～14.00pH; HTCN-501 (ORP): ±1999mV" }
+  - label: { zh: "解析度", en: "Resolution" }
+    value: { zh: "HTCN-501：0.01pH；HTCN-501（ORP）：1mV", en: "HTCN-501: 0.01pH; HTCN-501 (ORP): 1mV" }
+  - label: { zh: "测量精度", en: "Accuracy" }
+    value: { zh: "HTCN-501：±0.02pH；HTCN-501（ORP）：±1mV", en: "HTCN-501: ±0.02pH; HTCN-501 (ORP): ±1mV" }
+  - label: { zh: "信号输出", en: "Signal output" }
+    value: { zh: "4-20mA输出", en: "4-20mA output" }
+  - label: { zh: "工作原理", en: "Principle" }
+    value: { zh: "玻璃电极法（电化学）", en: "Glass electrode (electrochemical)" }
+  - label: { zh: "温度补偿", en: "Temperature compensation" }
+    value: { zh: "HTCN-501：自动温度补偿（可选）；HTCN-501（ORP）：温度测量（可选）", en: "HTCN-501: Automatic temperature compensation (optional); HTCN-501 (ORP): Temperature measurement (optional)" }
+  - label: { zh: "继电器", en: "Relay" }
+    value: { zh: "220V 3A", en: "220V 3A" }
+  - label: { zh: "电源", en: "Power supply" }
+    value: { zh: "AC220V±22V 50±1Hz", en: "AC220V±22V 50±1Hz" }
+  - label: { zh: "外型尺寸", en: "Dimensions" }
+    value: { zh: "96×96×110mm", en: "96×96×110mm" }
+  - label: { zh: "切割尺寸", en: "Panel cutout" }
+    value: { zh: "□ 92mm", en: "□ 92mm" }
+  - label: { zh: "安装方式", en: "Installation" }
+    value: { zh: "嵌入式", en: "Panel mount" }
+  - label: { zh: "重量", en: "Weight" }
+    value: { zh: "约800g", en: "Approx. 800 g" }
+tags: ["4-20mA", "RS485"]
+images:
+  - "/images/products/htcn-501/htcn-501-1.jpg"
+  - "/images/products/htcn-501/htcn-501-2.jpg"
+body:
+  zh: |-
+    <h2>安装使用</h2>
+    <ul><li>首次使用或更换电极时需要对仪器进行校正，以后每6个月进行一次校正，具体情况根据现场使用情况而定。</li><li>仪器与电极之间必须使用专用屏蔽线且不能剪断，信号线长度不能超过30米，若要延长或剪断信号线必须安装前置信号放大器。</li><li>仪器与电极安装地点应尽量避开变频器、380V电极等干扰源，若有干扰应做好屏蔽工作。</li><li>继电器与380V设备连接时需要使用交流接触器。</li></ul>
+  en: |-
+    <h2>Installation &amp; Use</h2>
+    <ul><li>Calibrate the instrument on first use and after replacing the electrode, then every 6 months depending on site conditions.</li><li>Use the dedicated shielded cable between instrument and electrode and do not cut it. The signal cable must not exceed 30 m; a preamplifier is required to extend or cut it.</li><li>Install away from interference sources such as VFDs and 380V equipment; shield properly if interference exists.</li><li>Use an AC contactor when connecting relays to 380V equipment.</li></ul>

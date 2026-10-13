@@ -57,10 +57,10 @@ content:
         required: true
         options:
           values:
+            - { name: concentration, label: 浓度测量仪表 }
             - { name: water-quality, label: 水质分析仪表 }
-            - { name: valves, label: 工业阀门 }
-            - { name: flow, label: 流量仪表 }
-            - { name: pressure-level, label: 压力/液位/温度仪表 }
+            - { name: flow, label: 流量测量仪表 }
+            - { name: level, label: 液位测量仪表 }
       - name: featured
         label: 常用产品（首页展示）
         type: boolean

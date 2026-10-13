@@ -1,0 +1,27 @@
+model: "HTCN-302"
+category: water-quality
+featured: false
+order: 100
+name:
+  zh: "HTCN-302系列荧光法溶解氧"
+  en: "HTCN-302 Optical Dissolved Oxygen Analyzer"
+summary:
+  zh: "HTCN-302系列荧光法溶解氧仪是基于物理学中特定物质对活性荧光的猝熄原理。调制的绿光照到荧光物质上使其激发,并发出红光,由于氧分子可以带走能量(猝熄效应),所以激发红光的时间和强度与氧分子的浓度成反比。采用了与绿光同步的红光光源作为参比,测量激发红光与参比光之间的相位差,并与内部标定值比对,从而计算出氧分子的浓度,井经过温度补偿输出最终值。"
+  en: "The HTCN-302 optical DO analyzer is based on fluorescence quenching. Modulated green light excites a luminophore that emits red light; oxygen molecules quench this emission, so its lifetime and intensity are inversely proportional to oxygen concentration. A red reference light synchronized with the green light is used, and the phase difference between emitted and reference light is compared with internal calibration to calculate oxygen concentration, with temperature compensation applied to the output."
+features:
+  zh: []
+  en: []
+applications:
+  zh: []
+  en: []
+specs: []
+tags: []
+images:
+  - "/images/products/htcn-302/htcn-302-1.jpg"
+body:
+  zh: |-
+    <h2>技术参数</h2>
+    <img src="/images/products/htcn-302/htcn-302-2.jpg" alt="HTCN-302系列荧光法溶解氧 技术参数">
+  en: |-
+    <h2>Specifications</h2>
+    <img src="/images/products/htcn-302/htcn-302-2.jpg" alt="HTCN-302 Specifications">

@@ -1,0 +1,62 @@
+model: "HTDS-200"
+category: level
+featured: false
+order: 220
+name:
+  zh: "HTDS-200系列分体超声波液位计/液位差计"
+  en: "HTDS-200 Remote Ultrasonic Level / Level Difference Meter"
+summary:
+  zh: "HTDS-200系列分体超声波液位仪计/液位差计是一种智能非接触式液位测量仪表。产品具有发射功率可调整，全量程内增益控制，自动温度补偿等功能，能识别虚假信号，从而有效去除各种干扰信号。本系列产品可广泛用于各种液体的液位和固体物位测量，同时也可用于测距使用。"
+  en: "The HTDS-200 remote ultrasonic level / level difference meter is an intelligent non-contact instrument for liquids and solids. It features adjustable transmit power, full-range gain control and automatic temperature compensation, and identifies false echoes to reject interference. It can also be used for distance measurement."
+features:
+  zh:
+    - "采用SMD技术，提高仪器的可靠性"
+    - "自动功率调整、增益控制、温度补偿"
+    - "丰富的软件功能适应各种复杂环境"
+    - "具有干扰回波的抑止功能保证测量数据的真实性"
+    - "16位D/A转换，提高电流输出的准确度和分辨率"
+    - "传感器可采用聚四氟乙烯材料，用于各种腐蚀性场合仪表选型"
+  en:
+    - "SMD construction for high reliability"
+    - "Automatic power adjustment, gain control and temperature compensation"
+    - "Rich software functions for complex conditions"
+    - "False-echo suppression for reliable data"
+    - "16-bit D/A for accurate, high-resolution current output"
+    - "PTFE sensor option for corrosive applications"
+applications:
+  zh: []
+  en: []
+specs:
+  - label: { zh: "工作电源", en: "Power supply" }
+    value: { zh: "AC-220V、DC-24V", en: "220VAC, 24VDC" }
+  - label: { zh: "信号输出", en: "Signal output" }
+    value: { zh: "4-20mA(16位D/A,750欧姆负载)、RS485", en: "4-20mA (16-bit D/A, 750Ω load), RS485" }
+  - label: { zh: "工作量程", en: "Range" }
+    value: { zh: "HTDS-200K超声波液位计：0-40m任何段；HTDS-200C超声波液位差计：0-30m任何段", en: "HTDS-200K level meter: Any span within 0-40 m; HTDS-200C level difference meter: Any span within 0-30 m" }
+  - label: { zh: "控制输出", en: "Control output" }
+    value: { zh: "HTDS-200K超声波液位计：四路继电器,可编程；HTDS-200C超声波液位差计：四路继电器,可编程（液位差）", en: "HTDS-200K level meter: 4 programmable relays; HTDS-200C level difference meter: 4 programmable relays (level difference)" }
+  - label: { zh: "工作盲区", en: "Blind zone" }
+    value: { zh: "HTDS-200K超声波液位计：0.2m—1.0m；HTDS-200C超声波液位差计：0.2m—0.6m", en: "HTDS-200K level meter: 0.2m—1.0m; HTDS-200C level difference meter: 0.2m—0.6m" }
+  - label: { zh: "工作压力", en: "Working pressure" }
+    value: { zh: "常压", en: "Atmospheric" }
+  - label: { zh: "分辨率", en: "Resolution" }
+    value: { zh: "量程≤15m：1mm 量程＞15m：1cm", en: "≤ 15 m: 1 mm; > 15 m: 1 cm" }
+  - label: { zh: "精确度", en: "Accuracy" }
+    value: { zh: "HTDS-200K超声波液位计：0.25%、0.5%；HTDS-200C超声波液位差计：0.3%", en: "HTDS-200K level meter: 0.25%, 0.5%; HTDS-200C level difference meter: 0.3%" }
+  - label: { zh: "环境温度", en: "Ambient temperature" }
+    value: { zh: "变送器：-25℃-70℃ / 传感器：-25℃-80℃", en: "Transmitter: -25 to 70℃ / Sensor: -25 to 80℃" }
+  - label: { zh: "防护等级", en: "Protection" }
+    value: { zh: "变送器：IP65, 传感器：IP67", en: "Transmitter: IP65; sensor: IP67" }
+  - label: { zh: "显示方式", en: "Display" }
+    value: { zh: "16位×2 LCD背光", en: "16×2 backlit LCD" }
+tags: ["4-20mA", "RS485", "IP65", "IP67"]
+images:
+  - "/images/products/htds-200/htds-200-1.jpg"
+datasheet: "/files/htds-200c-level-difference-manual.pdf"
+body:
+  zh: |-
+    <h2>仪表选型</h2>
+    <table><thead><tr><th>序号</th><th>组件/参数</th><th>选项</th></tr></thead><tbody><tr><td>1</td><td>仪表类型</td><td>Y2-----一体两线型 / Y4-----一体四线型 / K------智能分体型 / C------智能液位差 / W------智能双通道</td></tr><tr><td>2</td><td>工作量程</td><td>5m------050 / 10m-----100 / 15m-----150 / 20m-----200 / 30m-----300 / 40m-----400</td></tr><tr><td>3</td><td>信号输出</td><td>I------4-20mA / R------RS485 / J------继电器输出</td></tr><tr><td>4</td><td>功能类型</td><td>N------普通型 / F------防腐型</td></tr><tr><td>5</td><td>工作电源</td><td>D------24VDC / A------220VAC</td></tr></tbody></table>
+  en: |-
+    <h2>Model Selection</h2>
+    <table><thead><tr><th>No.</th><th>Item</th><th>Options</th></tr></thead><tbody><tr><td>1</td><td>Type</td><td>Y2 - integral 2-wire / Y4 - integral 4-wire / K - remote / C - level difference / W - dual channel</td></tr><tr><td>2</td><td>Range</td><td>5m------050 / 10m-----100 / 15m-----150 / 20m-----200 / 30m-----300 / 40m-----400</td></tr><tr><td>3</td><td>Signal output</td><td>I - 4-20mA / R - RS485 / J - relay</td></tr><tr><td>4</td><td>Version</td><td>N - standard / F - anti-corrosion</td></tr><tr><td>5</td><td>Power supply</td><td>D------24VDC / A------220VAC</td></tr></tbody></table>

@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 // 将 Word（.docx）产品资料转换为产品 YAML + 图片。
 // 用法: npm run import:docx -- <docx 文件或目录> --category <分类ID> [--lang zh|en]
-//   分类ID: water-quality | valves | flow | pressure-level
+//   分类ID: concentration | water-quality | flow | level
 // 已存在的 YAML 只更新 body.<lang> 与 images，不会覆盖手工填写的其他字段。
 import { mkdir, readdir, readFile, stat, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import mammoth from 'mammoth';
 
-const CATEGORIES = ['water-quality', 'valves', 'flow', 'pressure-level'];
+const CATEGORIES = ['concentration', 'water-quality', 'flow', 'level'];
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const CONTENT = path.join(ROOT, 'src/content/products');
 const IMAGES = path.join(ROOT, 'public/images/products');

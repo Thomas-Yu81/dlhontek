@@ -1,0 +1,60 @@
+model: "HT-LMZ"
+category: flow
+featured: false
+order: 150
+name:
+  zh: "HT-LMZ超声波明渠流量计"
+  en: "HT-LMZ Ultrasonic Open Channel Flowmeter"
+summary:
+  zh: "HT-LMZ超声波明渠流量计主要适用于具有自由流条件的河道，灌渠、工厂、城市污水排水沟及非满管管道内流量的测量。可以根据现场情况选配不同的量水堰槽：距形槽、三角槽、巴歇尔槽。"
+  en: "The HT-LMZ ultrasonic open channel flowmeter measures free-surface flow in rivers, irrigation canals, factory and municipal drains and partially filled pipes. Rectangular, V-notch or Parshall flumes can be selected to suit the site."
+features:
+  zh: []
+  en: []
+applications:
+  zh: []
+  en: []
+specs:
+  - label: { zh: "流量范围", en: "Flow range" }
+    value: { zh: "0升/秒～100米3/秒（由配用的量水堰槽的种类、规格确定）", en: "0 L/s to 100 m3/s (depends on flume type and size)" }
+  - label: { zh: "累计流量", en: "Totalizer" }
+    value: { zh: "12位十进制数，累满后自动回零", en: "12 digits, auto-reset on overflow" }
+  - label: { zh: "流量精度", en: "Flow accuracy" }
+    value: { zh: "3％", en: "3％" }
+  - label: { zh: "测距范围", en: "Distance range" }
+    value: { zh: "3m", en: "3m" }
+  - label: { zh: "测距精度", en: "Distance accuracy" }
+    value: { zh: "0.25％", en: "0.25％" }
+  - label: { zh: "液位分辩", en: "Level resolution" }
+    value: { zh: "1mm", en: "1mm" }
+  - label: { zh: "工作温度", en: "Operating temperature" }
+    value: { zh: "-20～70℃", en: "-20～70℃" }
+  - label: { zh: "仪表等级", en: "Protection" }
+    value: { zh: "仪表显示部分：IP65；探头部分：IP67", en: "Display unit: IP65; probe: IP67" }
+  - label: { zh: "供电电源", en: "Power supply" }
+    value: { zh: "交流供电 220V或DC24V（按接线座标注）", en: "220VAC or 24VDC (per terminal marking)" }
+  - label: { zh: "信号输出", en: "Signal output" }
+    value: { zh: "4～20mA电流输出(对应瞬时流量)，RS485(附通讯说明)", en: "4-20mA (flow rate), RS485 (protocol provided)" }
+  - label: { zh: "屏幕显示", en: "Display" }
+    value: { zh: "192*64 LCD点阵显示屏", en: "192 × 64 dot-matrix LCD" }
+  - label: { zh: "流道形式", en: "Channel type" }
+    value: { zh: "巴歇尔槽、三角堰槽、矩形堰槽（可选）", en: "Parshall, V-notch or rectangular flume (optional)" }
+  - label: { zh: "继电器输出", en: "Relay output" }
+    value: { zh: "4路继电器输出", en: "4 relay outputs" }
+tags: ["4-20mA", "RS485", "IP65", "IP67"]
+images:
+  - "/images/products/ht-lmz/ht-lmz-1.jpg"
+  - "/images/products/ht-lmz/ht-lmz-2.png"
+body:
+  zh: |-
+    <h2>性能特点</h2>
+    <p>HT-LMZ超声波明渠流量计与各种国家标准堰或槽配套，主要适用于具有自由流条件的河道，灌渠、工厂、城市污水排水沟及非满管管道内流量的测量。仪器工作时，传感器不与被测流体接触，避免了渠道内污水的沾污和腐蚀。用于测量污水流量，可以比其它形式的仪表，具有更高的可靠性。</p>
+    <p>HT-LMZ超声波明渠流量计是根据特定形状的流道，保证一定液位高度得出流量。其传感器安装在测量点的上方，通过单片机处理，测量出液位高度,再根据流量计算法公式Q=Chan (c,no为设定参数)即可得到液体流量。选用巴歇尔槽、距形槽或三角槽作为特定流道，安装方便。</p>
+    <h2>仪表选型</h2>
+    <table><thead><tr><th>序号</th><th>组件/参数</th><th>选项</th></tr></thead><tbody><tr><td>Ⅰ</td><td>渠堰类型</td><td>R---------矩形 / T---------三角形 / B---------巴歇尔槽</td></tr><tr><td>Ⅱ</td><td>流量范围</td><td>0-3000t/h</td></tr></tbody></table>
+  en: |-
+    <h2>Features</h2>
+    <p>The HT-LMZ works with standard weirs and flumes to measure free-surface flow in rivers, irrigation canals, factory and municipal drains and partially filled pipes. The sensor never contacts the liquid, avoiding fouling and corrosion, which makes it more reliable than other meters for wastewater flow.</p>
+    <p>The HT-LMZ derives flow from the liquid level in a channel of defined shape. The sensor is mounted above the measuring point; the microcontroller measures the level and calculates flow with Q = C·h^n (C and n are set parameters). Parshall, rectangular or V-notch flumes can be used and are easy to install.</p>
+    <h2>Model Selection</h2>
+    <table><thead><tr><th>No.</th><th>Item</th><th>Options</th></tr></thead><tbody><tr><td>Ⅰ</td><td>Flume type</td><td>R - rectangular / T - V-notch / B - Parshall</td></tr><tr><td>Ⅱ</td><td>Flow range</td><td>0-3000t/h</td></tr></tbody></table>

@@ -20,7 +20,7 @@ const t = useT(lang);
       <div class="mt-6"><InquiryForm lang={lang} /></div>
     </div>
     <div class="space-y-4 text-sm">
-      <div><div class="font-semibold text-slate-900">{t('contact.phone')}</div><a href={`tel:${site.phone}`} class="text-brand-600">{site.phone}</a> / {site.mobile}</div>
+      <div><div class="font-semibold text-slate-900">{t('contact.phone')}</div><a href={`tel:${site.phone}`} class="text-brand-600">{site.phone}</a> / {site.tel}<div class="text-sm text-slate-500">{lang === 'zh' ? '传真' : 'Fax'}: {site.fax}</div></div>
       <div><div class="font-semibold text-slate-900">{t('contact.email')}</div><a href={`mailto:${site.email}`} class="text-brand-600">{site.email}</a></div>
       <div><div class="font-semibold text-slate-900">{t('contact.address')}</div>{site.address[lang]}</div>
       <div><div class="font-semibold text-slate-900">{t('contact.wechat')}</div><img src={site.wechatQr} alt="WeChat QR" class="mt-2 h-32 w-32 rounded border border-slate-200" /></div>

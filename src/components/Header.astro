@@ -23,8 +23,7 @@ const isActive = (href: string) =>
 <header class="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur">
   <div class="container-x flex h-16 items-center justify-between gap-4">
     <a href={localePath(lang, '/')} class="flex items-center gap-2">
-      <img src="/favicon.svg" alt="" class="h-8 w-8" />
-      <span class="text-lg font-bold tracking-wide text-brand-900">{site.brand}</span>
+      <img src="/images/logo.png" alt={site.company[lang]} width="239" height="33" class="h-8 w-auto" />
     </a>
     <nav class="hidden items-center gap-1 md:flex">
       {

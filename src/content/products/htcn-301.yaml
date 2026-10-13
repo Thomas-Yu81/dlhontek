@@ -1,0 +1,31 @@
+model: "HTCN-301"
+category: water-quality
+featured: false
+order: 30
+name:
+  zh: "HTCN-301系列PH/ORP"
+  en: "HTCN-301 pH/ORP Analyzer"
+summary:
+  zh: "HTCN-301是一种常用的仪器设备，主要用来精密测量液体介质的酸碱度值/氧化还原电位值，广泛应用于工业、农业、科研、环保等领。"
+  en: "The HTCN-301 precisely measures the pH and oxidation-reduction potential (ORP) of liquids and is widely used in industry, agriculture, research and environmental protection."
+features:
+  zh: []
+  en: []
+applications:
+  zh: []
+  en: []
+specs: []
+tags: []
+images:
+  - "/images/products/htcn-301/htcn-301-1.jpg"
+body:
+  zh: |-
+    <h2>技术参数</h2>
+    <img src="/images/products/htcn-301/htcn-301-2.jpg" alt="HTCN-301系列PH/ORP 技术参数">
+    <img src="/images/products/htcn-301/htcn-301-3.jpg" alt="HTCN-301系列PH/ORP 技术参数">
+    <img src="/images/products/htcn-301/htcn-301-4.jpg" alt="HTCN-301系列PH/ORP 技术参数">
+  en: |-
+    <h2>Specifications</h2>
+    <img src="/images/products/htcn-301/htcn-301-2.jpg" alt="HTCN-301 Specifications">
+    <img src="/images/products/htcn-301/htcn-301-3.jpg" alt="HTCN-301 Specifications">
+    <img src="/images/products/htcn-301/htcn-301-4.jpg" alt="HTCN-301 Specifications">

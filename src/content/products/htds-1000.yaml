@@ -1,0 +1,72 @@
+model: "HTDS-1000"
+category: flow
+featured: false
+order: 160
+name:
+  zh: "HTDS-1000系列多通道超声波流量计"
+  en: "HTDS-1000 Multi-channel Ultrasonic Flowmeter"
+summary:
+  zh: "多通道超声波流量计可同时对多条管道巡回测量，每条管道安装一组传感器，测量数据既显示当前测量管道的流量也可显示所有被测量管道的总流量；也可以对一条管道进行测量，根据各个测量值计算加权平均值得出流量，即使有传感器不工作，也不影响正常测量。"
+  en: "The multi-channel ultrasonic flowmeter can scan several pipes, one sensor pair per pipe, showing the flow of the current pipe and the total of all pipes. It can also measure a single pipe with multiple paths and compute a weighted average; measurement continues even if one sensor fails."
+features:
+  zh: []
+  en: []
+applications:
+  zh: []
+  en: []
+specs:
+  - label: { zh: "测量原理", en: "Measuring principle" }
+    value: { zh: "超声波传播时差原理，双CPU并行工作", en: "Ultrasonic transit time, dual CPU" }
+  - label: { zh: "声道数", en: "Paths" }
+    value: { zh: "2—16声道", en: "2-16 paths" }
+  - label: { zh: "测量周期", en: "Measuring cycle" }
+    value: { zh: "500mS（每秒2次）", en: "500 ms (2 per second)" }
+  - label: { zh: "显示", en: "Display" }
+    value: { zh: "彩色TFT，LCD，数字显示、实时曲线、追忆曲线", en: "Color TFT LCD with digital readings, real-time and historical curves" }
+  - label: { zh: "操作", en: "Keypad" }
+    value: { zh: "5×1轻触键盘", en: "5×1 membrane keypad" }
+  - label: { zh: "输出", en: "Output" }
+    value: { zh: "电流信号：4～20mA或0～20mA，阻抗0～1KΩ浮空，精度0.1%", en: "Current: 4-20mA or 0-20mA, 0-1kΩ floating, 0.1% accuracy" }
+  - label: { zh: "其它功能", en: "Other functions" }
+    value: { zh: "记忆累积功能；上、断电时间及流量管理功能", en: "Totalizer memory; power on/off time and flow logging" }
+  - label: { zh: "测量精度", en: "Accuracy" }
+    value: { zh: "时差1.0%，", en: "1.0% (transit time)" }
+  - label: { zh: "流速范围", en: "Velocity range" }
+    value: { zh: "0～±30M／S", en: "0 to ±30 m/s" }
+  - label: { zh: "电缆长度", en: "Cable length" }
+    value: { zh: "可加长至50米（超过此长度请同厂家联系）", en: "Up to 50 m (contact us for longer)" }
+  - label: { zh: "管材", en: "Pipe material" }
+    value: { zh: "钢、不锈钢、铸铁、硬质塑料等一切质地致密管道，允许有薄层衬里", en: "Steel, stainless steel, cast iron, rigid plastic and other dense materials; thin liners allowed" }
+  - label: { zh: "内径", en: "Inner diameter" }
+    value: { zh: "15mm-6000mm", en: "15mm-6000mm" }
+  - label: { zh: "直管段长度", en: "Straight run" }
+    value: { zh: "上游≥10D，距泵出口处≥30D，下游≥5D", en: "Upstream ≥ 10D, ≥ 30D from pump outlet, downstream ≥ 5D" }
+  - label: { zh: "种类", en: "Liquid type" }
+    value: { zh: "水、海水、酸碱液、食物油、汽油柴油、原油、酒精、啤酒等能传播超声波的均匀液体。", en: "Water, seawater, acids and alkalis, edible oil, gasoline, diesel, crude oil, alcohol, beer and other homogeneous liquids that conduct ultrasound." }
+  - label: { zh: "浊度", en: "Turbidity" }
+    value: { zh: "时差≤10000ppM，且气泡含量小；多普勒悬浮物颗粒大于100mg/l", en: "Transit time: ≤ 10000 ppm with few bubbles; Doppler: suspended solids > 100 mg/L" }
+  - label: { zh: "温度", en: "Temperature" }
+    value: { zh: "－10～+80℃（测高温流体请与厂家联系）", en: "-10 to +80℃ (contact us for high temperatures)" }
+tags: ["4-20mA"]
+images:
+  - "/images/products/htds-1000/htds-1000-1.jpg"
+datasheet: "/files/htds-ultrasonic-flowmeter-heat-meter-manual.pdf"
+body:
+  zh: |-
+    <h2>应用领域</h2>
+    <ul><li>水，污水、海水、给水和排水</li><li>热力、供热、供暖、冶金、矿山</li><li>石油、化工、食品和医药、造纸和制浆</li><li>流量、热量计算机化管理、监控网络系统等</li></ul>
+    <p>功能：</p>
+    <p>测量、显示管道内和渠道内液体的流量和流速、状态</p>
+    <p>组成：</p>
+    <p>流量传感器、流量检测单元、流量积算处理系统、电缆、安装附件</p>
+    <h2>备品备件</h2>
+    <table><thead><tr><th>名称</th><th>备注</th></tr></thead><tbody><tr><td>标准小型传感器S1型</td><td>测量范围：DN15-100mm</td></tr><tr><td>标准中型传感器M1型</td><td>测量范围：DN50-700mm</td></tr><tr><td>标准大型传感器L1型</td><td>测量范围：DN300-6000mm</td></tr><tr><td>标准插入式传感器</td><td>适用于DN80以上管径，适用温度≤160℃ / 插入式安装，可实现在线不停水安装</td></tr><tr><td>标准管段式传感器</td><td>可根据现场实际情况定制</td></tr></tbody></table>
+  en: |-
+    <h2>Applications</h2>
+    <ul><li>Water, wastewater, seawater, water supply and drainage</li><li>Heating, district heating, metallurgy, mining</li><li>Oil, chemicals, food and pharmaceuticals, pulp and paper</li><li>Computerized flow/heat management and monitoring networks</li></ul>
+    <p>Function:</p>
+    <p>Measures and displays liquid flow, velocity and status in pipes and channels</p>
+    <p>Components:</p>
+    <p>Flow sensors, detection unit, flow computer, cables, mounting accessories</p>
+    <h2>Sensors &amp; Accessories</h2>
+    <table><thead><tr><th>Name</th><th>Remarks</th></tr></thead><tbody><tr><td>Standard small sensor S1</td><td>Range: DN15-100</td></tr><tr><td>Standard medium sensor M1</td><td>Range: DN50-700</td></tr><tr><td>Standard large sensor L1</td><td>Range: DN300-6000</td></tr><tr><td>Standard insertion sensor</td><td>For DN80 and above, ≤ 160℃ / hot-tap installation without stopping flow</td></tr><tr><td>Standard spool sensor</td><td>Custom-made to site requirements</td></tr></tbody></table>
