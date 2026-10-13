@@ -1,0 +1,52 @@
+model: "LUGB"
+category: flow
+featured: true
+order: 120
+name:
+  zh: "LUGB系列涡街流量计"
+  en: "LUGB Vortex Flowmeter"
+summary:
+  zh: "LUGB系列涡街流量计根据卡门（karman）涡街原理测量气体、蒸汽或液体的体积流量、标况的体积流量或质量流量的体积流量计。广泛用于各行业气体、液体、蒸汽流量的计量，也可测量含有微小颗料、杂质的混浊液体，并可做为流量变送器用于自动化控制系统中。"
+  en: "The LUGB vortex flowmeter uses the Kármán vortex principle to measure the volumetric, standard volumetric or mass flow of gas, steam and liquids. It is widely used for flow metering across industries, can measure turbid liquids containing fine particles, and can serve as a flow transmitter in automation systems."
+features:
+  zh:
+    - "可测量蒸汽、气体、液体的体积流量和质量流量"
+    - "无机械运动部件、结构紧凑、维护方便"
+    - "压力损失小、量程范围宽、量程比达10－40倍"
+    - "采用消扰电路和抗振传感，仪表具有抗环境振动性能"
+    - "可测介质温度达+350℃（+450℃）"
+  en:
+    - "Measures volumetric and mass flow of steam, gas and liquids"
+    - "No moving parts, compact and easy to maintain"
+    - "Low pressure loss, wide range, turndown 10:1 to 40:1"
+    - "Noise-cancelling circuitry and anti-vibration sensing"
+    - "Medium temperature up to +350℃ (+450℃)"
+applications:
+  zh: []
+  en: []
+specs:
+  - label: { zh: "公称口径", en: "Nominal size" }
+    value: { zh: "DN10～DN500", en: "DN10～DN500" }
+  - label: { zh: "测量介质", en: "Medium" }
+    value: { zh: "气体、液体、蒸气", en: "Gas, liquid, steam" }
+  - label: { zh: "测量温度", en: "Medium temperature" }
+    value: { zh: "-40℃～150℃ / -40℃～280℃ / -40℃～350℃ / -40℃～450℃", en: "-40℃～150℃ / -40℃～280℃ / -40℃～350℃ / -40℃～450℃" }
+  - label: { zh: "精度等级", en: "Accuracy class" }
+    value: { zh: "1级，0.5级（注：0.5级量程范围≥1：7）", en: "Class 1, class 0.5 (class 0.5 requires range ≥ 1:7)" }
+  - label: { zh: "输出信号", en: "Output signal" }
+    value: { zh: "① 电压脉冲：低电平≤1V，高电平≥6V，脉冲宽0.4ms，负载电阻>150Ω / ② 4—20mA转换精度±0.5%满度值，负载电阻19V—350Ω，24V—500Ω，30V—750Ω / ③ 现场液晶显示：瞬时流量6位显示（m3/h或kg/h，t/h），转换准确度±0.1%；累计流量8位显示（m3，kg，t），转换准确度±0.1%", en: "① Voltage pulse: low ≤ 1V, high ≥ 6V, width 0.4 ms, load > 150Ω / ② 4-20mA: ±0.5% FS, load 350Ω at 19V, 500Ω at 24V, 750Ω at 30V / ③ Local LCD: 6-digit flow rate (m3/h, kg/h or t/h) and 8-digit total (m3, kg or t), ±0.1%" }
+  - label: { zh: "供电电源", en: "Power supply" }
+    value: { zh: "① 电压脉冲输出：+12VDC或+24VDC / ② 4—20mA输出：+19VDC—+30VDC / ③ 现场液晶显示：电池供电3.6V，1节1号锂电池，使用寿命大于3年；外部供电+12VDC或+24VDC可实现带背光的液晶显示（订货注明）", en: "① Pulse output: +12VDC or +24VDC / ② 4-20mA output: +19 to +30VDC / ③ Local LCD: one 3.6V D-size lithium battery, life > 3 years; external +12/+24VDC enables backlit LCD (specify when ordering)" }
+  - label: { zh: "环境温度", en: "Ambient temperature" }
+    value: { zh: "① 电压脉冲输出：-30℃—+65℃； / ② 4—20mA输出 ：-10℃—+55℃； / ③ 现场液晶显示：-25℃—+55℃", en: "① Pulse output: -30 to +65℃ / ② 4-20mA output: -10 to +55℃ / ③ Local LCD: -25 to +55℃" }
+tags: ["4-20mA"]
+images:
+  - "/images/products/lugb/lugb-1.jpg"
+datasheet: "/files/lugb-vortex-flowmeter-manual.pdf"
+body:
+  zh: |-
+    <h2>仪表选型</h2>
+    <table><thead><tr><th>序号</th><th>组件/参数</th><th>选项</th></tr></thead><tbody><tr><td>Ⅰ</td><td>测量管径</td><td>DN10～DN500</td></tr><tr><td>Ⅱ</td><td>仪表类型</td><td>Y-----一体型 / K-----分体型 / C-----插入型</td></tr><tr><td>Ⅲ</td><td>工作压力</td><td>P1-----0.6MPa / P2-----1.0MPa / P3-----1.6MPa / P4-----2.5MPa</td></tr><tr><td>Ⅴ</td><td>测量介质</td><td>D1----液体 / D2----气体，蒸汽</td></tr><tr><td>Ⅵ</td><td>工作电源</td><td>T1-----直流24VDC / T2-----电池供电</td></tr><tr><td>Ⅶ</td><td>信号输出</td><td>H1-----4-20mA / H2-----脉冲输出</td></tr></tbody></table>
+  en: |-
+    <h2>Model Selection</h2>
+    <table><thead><tr><th>No.</th><th>Item</th><th>Options</th></tr></thead><tbody><tr><td>Ⅰ</td><td>Pipe size</td><td>DN10～DN500</td></tr><tr><td>Ⅱ</td><td>Type</td><td>Y - integral / K - remote / C - insertion</td></tr><tr><td>Ⅲ</td><td>Working pressure</td><td>P1-----0.6MPa / P2-----1.0MPa / P3-----1.6MPa / P4-----2.5MPa</td></tr><tr><td>Ⅴ</td><td>Medium</td><td>D1 - liquid / D2 - gas, steam</td></tr><tr><td>Ⅵ</td><td>Power supply</td><td>T1 - 24VDC / T2 - battery</td></tr><tr><td>Ⅶ</td><td>Signal output</td><td>H1 - 4-20mA / H2 - pulse</td></tr></tbody></table>

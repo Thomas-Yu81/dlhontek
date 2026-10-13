@@ -1,0 +1,75 @@
+model: "HT-USD"
+category: concentration
+featured: false
+order: 20
+name:
+  zh: "HT-USD系列超声波浓度计"
+  en: "HT-USD Ultrasonic Concentration Meter"
+summary:
+  zh: "HT-USD型超声波污泥浓度计利用水中固浮物对超声波的衰减，测量悬浮物浓度；超声波在污泥和悬浮物中的衰减与液体中的污泥和悬浮物的浓度有关，根据这一原理超声波污泥浓度计实现了污泥和悬浮物浓度的在线测量和监控。"
+  en: "The HT-USD ultrasonic sludge concentration meter measures suspended solids from the attenuation of ultrasound in water. Because attenuation depends on the concentration of sludge and suspended solids, the meter provides online measurement and monitoring of sludge and suspended solids concentration."
+features:
+  zh:
+    - "适合不同种类液体中的污泥和悬浮物的测量"
+    - "现场标定简便"
+    - "可输出污泥浓度%或g/l，现场选择"
+    - "管段式为全不锈钢材质，耐腐蚀、抗沾附性更强"
+    - "管段式带喷嘴和采样阀，用于自清洗和采样标定"
+    - "浸没式传感器为不锈钢焊接结构"
+    - "防护等级：IP68"
+    - "超宽液晶，棒图显示"
+    - "可选2点或3点标定，测量精度高"
+  en:
+    - "Measures sludge and suspended solids in many kinds of liquids"
+    - "Easy on-site calibration"
+    - "Output in % or g/L, selectable on site"
+    - "All-stainless spool version with better corrosion and fouling resistance"
+    - "Spool version with nozzle and sampling valve for self-cleaning and sample calibration"
+    - "Welded stainless steel submersion sensor"
+    - "Protection: IP68"
+    - "Wide LCD with bar graph"
+    - "2- or 3-point calibration for high accuracy"
+applications:
+  zh: []
+  en: []
+specs:
+  - label: { zh: "测量范围", en: "Measuring range" }
+    value: { zh: "污泥：0～600g/L", en: "Sludge: 0-600 g/L" }
+  - label: { zh: "分辨率", en: "Resolution" }
+    value: { zh: "0.5%", en: "0.5%" }
+  - label: { zh: "测量精度", en: "Accuracy" }
+    value: { zh: "±3%FS，±5%FS", en: "±3%FS, ±5%FS" }
+  - label: { zh: "重复性", en: "Repeatability" }
+    value: { zh: "±1.0%", en: "±1.0%" }
+  - label: { zh: "显示", en: "Display" }
+    value: { zh: "LCD", en: "LCD" }
+  - label: { zh: "信号输出", en: "Signal output" }
+    value: { zh: "隔离4～20mA，负载上限750Ω", en: "Isolated 4-20mA, max. load 750Ω" }
+  - label: { zh: "开关输出", en: "Switch output" }
+    value: { zh: "2个继电器，容量220V/2A", en: "2 relays, 220V/2A" }
+  - label: { zh: "介质温度", en: "Medium temperature" }
+    value: { zh: "0℃～60℃", en: "0℃～60℃" }
+  - label: { zh: "材质", en: "Material" }
+    value: { zh: "316不锈钢线缆：屏蔽双胶线", en: "316 stainless steel; cable: shielded twisted pair" }
+  - label: { zh: "工作电源", en: "Power supply" }
+    value: { zh: "220VAC+10%", en: "220VAC+10%" }
+  - label: { zh: "安装方式", en: "Installation" }
+    value: { zh: "浸没式、管段式、插入式", en: "Submersion, spool or insertion" }
+  - label: { zh: "信号线缆", en: "Signal cable" }
+    value: { zh: "10m(标配）可延长", en: "10 m (standard), extendable" }
+tags: ["4-20mA", "IP68"]
+images:
+  - "/images/products/ht-usd/ht-usd-1.jpg"
+body:
+  zh: |-
+    <h2>应用场合</h2>
+    <p>给水厂及污水处理厂：</p>
+    <p>回流污泥、初沉池、二沉池、浓缩池、污泥脱水等。</p>
+    <p>工矿企业：</p>
+    <p>洗煤厂、矿山、造纸、电力矿浆浓度、煤浆浓度、灰浆浓度、纸浆浓度等。</p>
+  en: |-
+    <h2>Applications</h2>
+    <p>Water and wastewater treatment plants:</p>
+    <p>Return sludge, primary and secondary clarifiers, thickeners, sludge dewatering, etc.</p>
+    <p>Industrial and mining:</p>
+    <p>Coal washing plants, mines, paper and power plants: ore slurry, coal slurry, mortar and pulp concentration, etc.</p>

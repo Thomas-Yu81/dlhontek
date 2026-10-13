@@ -1,0 +1,28 @@
+model: "TSS"
+category: water-quality
+featured: false
+order: 90
+name:
+  zh: "TSS浊度/MLSS悬浮物分析仪"
+  en: "TSS Turbidity / MLSS Suspended Solids Analyzer"
+summary:
+  zh: "TSS浊度/MLSS悬浮物分析仪采用创新的多光束相互补偿技术，明显地提高测量度，减少了维护工作量，提高了工作可靠性，特别适用于污水处理领域恶劣的工况。"
+  en: "The TSS turbidity / MLSS analyzer uses innovative multi-beam mutual compensation, significantly improving accuracy, reducing maintenance and increasing reliability. It is especially suited to harsh wastewater treatment conditions."
+features:
+  zh: []
+  en: []
+applications:
+  zh: []
+  en: []
+specs: []
+tags: []
+images:
+  - "/images/products/tss-mlss/tss-mlss-1.jpg"
+datasheet: "/files/ht-mlss-sludge-concentration-manual.pdf"
+body:
+  zh: |-
+    <h2>技术参数</h2>
+    <img src="/images/products/tss-mlss/tss-mlss-2.png" alt="TSS浊度/MLSS悬浮物分析仪 技术参数">
+  en: |-
+    <h2>Specifications</h2>
+    <img src="/images/products/tss-mlss/tss-mlss-2.png" alt="TSS Specifications">

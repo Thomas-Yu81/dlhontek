@@ -1,0 +1,60 @@
+model: "HTCN-303"
+category: water-quality
+featured: true
+order: 50
+name:
+  zh: "HTCN-303系列余氯分析仪"
+  en: "HTCN-303 Residual Chlorine Analyzer"
+summary:
+  zh: "HTCN-303余氯在线分析仪是一款全新的余氯分析仪，本表具有高度的高智能化和灵活性，可同时测量余氯、次氯酸，pH、温度，广泛应用于电力、供水、医药、化工、食品等行业，对水中的余氯和pH值进行连续测量。"
+  en: "The HTCN-303 online residual chlorine analyzer is highly intelligent and flexible. It measures residual chlorine, hypochlorous acid, pH and temperature simultaneously and is widely used for continuous monitoring in power, water supply, pharmaceutical, chemical and food industries."
+features:
+  zh:
+    - "采用面向对象的菜单设计，操作简单"
+    - "全智能、多功能、测量性能高，环境适应性强等特点"
+    - "多参数同时显示，余氯值、输出电流、时间"
+    - "4-20mA变送输出、继电器高、低报警控制输出、RS485通信输出等各种变量输出，系统智能控制"
+    - "适配多种类型测量电极"
+    - "高精度自动温度补偿系统"
+  en:
+    - "Object-oriented menu, easy operation"
+    - "Fully intelligent, multi-functional, high performance and robust"
+    - "Displays chlorine value, output current and time simultaneously"
+    - "4-20mA output, high/low alarm relays and RS485 communication for intelligent control"
+    - "Compatible with various electrodes"
+    - "High-precision automatic temperature compensation"
+applications:
+  zh: []
+  en: []
+specs:
+  - label: { zh: "测量范围", en: "Measuring range" }
+    value: { zh: "0.00-20mg/L", en: "0.00-20mg/L" }
+  - label: { zh: "示值误差", en: "Indication error" }
+    value: { zh: "≤±0.5mg/L", en: "≤±0.5mg/L" }
+  - label: { zh: "信号输出", en: "Signal output" }
+    value: { zh: "4-20mA输出，负载上限750欧姆", en: "4-20mA output, max. load 750Ω" }
+  - label: { zh: "显示方式", en: "Display" }
+    value: { zh: "LCD液晶显示", en: "LCD" }
+  - label: { zh: "分辨率", en: "Resolution" }
+    value: { zh: "0.01mg/L", en: "0.01mg/L" }
+  - label: { zh: "环境温度", en: "Ambient temperature" }
+    value: { zh: "-20-55℃", en: "-20-55℃" }
+  - label: { zh: "继电器", en: "Relay" }
+    value: { zh: "2路继电器，容量220VAC/2A", en: "2 relays, 220VAC/2A" }
+  - label: { zh: "电源", en: "Power supply" }
+    value: { zh: "220VAC±10%或DC24V", en: "220VAC±10% or 24VDC" }
+  - label: { zh: "相对湿度", en: "Relative humidity" }
+    value: { zh: "（75±10）%", en: "(75±10)%" }
+  - label: { zh: "温度补偿", en: "Temperature compensation" }
+    value: { zh: "自动温度补偿", en: "Automatic temperature compensation" }
+  - label: { zh: "工作温度", en: "Operating temperature" }
+    value: { zh: "0-60℃（无凝结）", en: "0-60℃ (non-condensing)" }
+  - label: { zh: "电缆线长度", en: "Cable length" }
+    value: { zh: "标配10米屏蔽电缆（可延长）", en: "10 m shielded cable standard (extendable)" }
+tags: ["4-20mA", "RS485"]
+images:
+  - "/images/products/htcn-303/htcn-303-1.jpg"
+  - "/images/products/htcn-303/htcn-303-2.jpg"
+body:
+  zh: |-
+  en: |-

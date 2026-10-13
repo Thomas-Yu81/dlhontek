@@ -1,0 +1,63 @@
+model: "HTDS-200Y"
+category: level
+featured: true
+order: 210
+name:
+  zh: "HTDS-200Y系列超声波液（物）位仪"
+  en: "HTDS-200Y Integral Ultrasonic Level Meter"
+summary:
+  zh: "HTDS-200系列超声波液（物）位仪是一种智能非接触式液（物）位测量仪表。产品具有发射功率可调整，全量程内增益控制，自动温度补偿等功能，能识别虚假信号，从而有效去除各种干扰信号。本系列产品可广泛用于各种液体的液位和固体物位测量，同时也可用于测距使用。"
+  en: "The HTDS-200Y is an intelligent non-contact level meter for liquids and solids. It features adjustable transmit power, full-range gain control and automatic temperature compensation, and identifies false echoes to reject interference. It can also be used for distance measurement."
+features:
+  zh:
+    - "采用SMD技术，提高仪器的可靠性"
+    - "自动功率调整、增益控制、温度补偿"
+    - "丰富的软件功能适应各种复杂环境"
+    - "具有干扰回波的抑止功能保证测量数据的真实性"
+    - "16位D/A转换，提高电流输出的准确度和分辨率"
+    - "传感器可采用聚四氟乙烯材料，用于各种腐蚀性场合仪表选型"
+  en:
+    - "SMD construction for high reliability"
+    - "Automatic power adjustment, gain control and temperature compensation"
+    - "Rich software functions for complex conditions"
+    - "False-echo suppression for reliable data"
+    - "16-bit D/A for accurate, high-resolution current output"
+    - "PTFE sensor option for corrosive applications"
+applications:
+  zh: []
+  en: []
+specs:
+  - label: { zh: "工作电源", en: "Power supply" }
+    value: { zh: "一体四线：AC-220V、DC-24V；一体两线：DC-24v（18v-30v）", en: "Integral 4-wire: 220VAC, 24VDC; Integral 2-wire: 24VDC (18-30V)" }
+  - label: { zh: "信号输出", en: "Signal output" }
+    value: { zh: "一体四线：4-20mA(16位D/A,750欧姆负载)、RS485；一体两线：4-20mA（两线制）", en: "Integral 4-wire: 4-20mA (16-bit D/A, 750Ω load), RS485; Integral 2-wire: 4-20mA (2-wire)" }
+  - label: { zh: "工作量程", en: "Range" }
+    value: { zh: "一体四线：0-20m任何段；一体两线：0—15m任何段", en: "Integral 4-wire: Any span within 0-20 m; Integral 2-wire: Any span within 0-15 m" }
+  - label: { zh: "控制输出", en: "Control output" }
+    value: { zh: "二路继电器，可编程", en: "2 programmable relays" }
+  - label: { zh: "工作盲区", en: "Blind zone" }
+    value: { zh: "0.2m—0.6m", en: "0.2m—0.6m" }
+  - label: { zh: "工作压力", en: "Working pressure" }
+    value: { zh: "常压", en: "Atmospheric" }
+  - label: { zh: "分辨率", en: "Resolution" }
+    value: { zh: "一体四线：量程≤15m：1mm ＞15m：1cm；一体两线：量程＜10m,1mm 量程≥10m,1cm", en: "Integral 4-wire: ≤ 15 m: 1 mm; > 15 m: 1 cm; Integral 2-wire: < 10 m: 1 mm; ≥ 10 m: 1 cm" }
+  - label: { zh: "精确度", en: "Accuracy" }
+    value: { zh: "一体四线：0.25%、0.5%；一体两线：0.25%,0.5%", en: "Integral 4-wire: 0.25%, 0.5%; Integral 2-wire: 0.25%,0.5%" }
+  - label: { zh: "环境温度", en: "Ambient temperature" }
+    value: { zh: "一体四线：-25℃-70℃；一体两线：-25℃—70℃", en: "Integral 4-wire: -25℃-70℃; Integral 2-wire: -25℃—70℃" }
+  - label: { zh: "防护等级", en: "Protection" }
+    value: { zh: "IP65", en: "IP65" }
+tags: ["4-20mA", "RS485", "IP65"]
+images:
+  - "/images/products/htds-200y/htds-200y-1.jpg"
+  - "/images/products/htds-200y/htds-200y-2.jpg"
+datasheet: "/files/htds-200y-4-wire-manual.pdf"
+body:
+  zh: |-
+    <h2>仪表安装</h2>
+    <img src="/images/products/htds-200y/htds-200y-3.jpg" alt="HTDS-200Y系列超声波液（物）位仪 仪表安装">
+    <h2>资料下载</h2><ul><li><a href="/files/htds-200y-4-wire-manual.pdf">HTDS-200Y 一体四线说明书</a></li><li><a href="/files/htds-200y-2-wire-manual.pdf">HTDS-200Y 一体两线说明书</a></li></ul>
+  en: |-
+    <h2>Installation</h2>
+    <img src="/images/products/htds-200y/htds-200y-3.jpg" alt="HTDS-200Y Installation">
+    <h2>Downloads</h2><ul><li><a href="/files/htds-200y-4-wire-manual.pdf">HTDS-200Y 4-wire Manual</a></li><li><a href="/files/htds-200y-2-wire-manual.pdf">HTDS-200Y 2-wire Manual</a></li></ul>

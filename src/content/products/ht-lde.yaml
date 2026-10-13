@@ -1,0 +1,86 @@
+model: "HT-LDE"
+category: flow
+featured: true
+order: 140
+name:
+  zh: "HT-LDE系列电磁流量计"
+  en: "HT-LDE Electromagnetic Flowmeter"
+summary:
+  zh: "HT-LDE系列电磁流量计是根据电磁感应定律，按JB/T9248-1999标准制造, 用于测量管道中导电液体的体积流量，如水、污水、泥浆、矿浆、酸、碱、盐液体及食品浆液等。在石油化工、冶金、煤炭、水利工程给排水、污水处理等行业中广泛应用。"
+  en: "The HT-LDE electromagnetic flowmeter, built to JB/T 9248-1999, measures the volumetric flow of conductive liquids in pipes, such as water, wastewater, mud, ore slurry, acids, alkalis, salt solutions and food slurries. It is widely used in petrochemical, metallurgy, coal, water supply and drainage, and wastewater treatment."
+features:
+  zh:
+    - "测量不受液体密度、粘度、温度、压力和导电率变化的影响"
+    - "测量管内无活动及阻流部件，无压损、不堵塞，可测量含有纤维、固体颗粒和悬浮物的液体"
+    - "采用16位嵌入式微处理器，运算速度快，功耗低"
+    - "高清晰度背光LCD显示，全中文菜单，操作简捷"
+    - "仪表反映灵敏，量程比可达1:10-1:20 ，量程范围可任意选定流速0.3～10 m/s ，导电率>5μs/cm的导电液体都可测量"
+    - "仪表不受液体流动方向的影响，正反向安装均可测量；安装方便，对直管段要求不高"
+    - "电磁流量计的电极及内衬材料耐腐蚀性和耐磨性极好，寿命长，可按用户特殊工况要求定制非标电磁流量计"
+    - "仪表的耐冲击、耐振性良好"
+    - "具有MODBUS、HART、RS485、RS232等数字通讯信号输出"
+  en:
+    - "Unaffected by changes in density, viscosity, temperature, pressure and conductivity"
+    - "No moving or obstructing parts: no pressure loss, no clogging; handles fibers, solids and suspended matter"
+    - "16-bit embedded microprocessor, fast and low power"
+    - "High-definition backlit LCD, Chinese menu, simple operation"
+    - "Responsive, turndown 1:10-1:20, freely set range 0.3-10 m/s, for liquids above 5 μS/cm"
+    - "Bidirectional measurement; easy installation with short straight-run requirements"
+    - "Highly corrosion- and wear-resistant electrodes and liners, long life; custom designs available"
+    - "Good shock and vibration resistance"
+    - "MODBUS, HART, RS485 and RS232 communication"
+applications:
+  zh: []
+  en: []
+specs:
+  - label: { zh: "测量介质", en: "Medium" }
+    value: { zh: "任何导电的液体（电导率≥5μs/cm）", en: "Any conductive liquid (≥ 5 μS/cm)" }
+  - label: { zh: "测量口径", en: "Size" }
+    value: { zh: "DN10mm----------DN1600mm(管段式)；DN150以上（插入式）", en: "DN10-DN1600 (spool); above DN150 (insertion)" }
+  - label: { zh: "流速范围", en: "Velocity range" }
+    value: { zh: "0.3—15m/s", en: "0.3—15m/s" }
+  - label: { zh: "流动方向", en: "Flow direction" }
+    value: { zh: "正、反、净流量", en: "Forward, reverse, net" }
+  - label: { zh: "压力等级", en: "Pressure rating" }
+    value: { zh: "小口径（≤DN100mm）1.6MPa;大口径（≥DN150mm）1.0MPa", en: "≤ DN100: 1.6MPa; ≥ DN150: 1.0MPa" }
+  - label: { zh: "温度范围", en: "Temperature range" }
+    value: { zh: "-25℃-----180℃", en: "-25℃-----180℃" }
+  - label: { zh: "显示方式", en: "Display" }
+    value: { zh: "高清晰度背光LCD显示，全中文菜单操作", en: "High-definition backlit LCD, Chinese menu" }
+  - label: { zh: "信号输出", en: "Signal output" }
+    value: { zh: "4-20mA/0-20mA/频率信号/上下限报警等", en: "4-20mA / 0-20mA / frequency / high-low alarms" }
+  - label: { zh: "数字通讯", en: "Communication" }
+    value: { zh: "RS485、RS232、Hart和Modbus等", en: "RS485, RS232, HART, Modbus" }
+  - label: { zh: "电极材质", en: "Electrode material" }
+    value: { zh: "316不锈钢；钛；哈氏合金HB；HC；钽等", en: "316 SS, titanium, Hastelloy B/C, tantalum, etc." }
+  - label: { zh: "衬里材质", en: "Liner material" }
+    value: { zh: "氯丁橡胶；聚氨脂橡胶；PO；PTFE；F46等", en: "Neoprene, polyurethane, PO, PTFE, F46, etc." }
+  - label: { zh: "工作电源", en: "Power supply" }
+    value: { zh: "AC85~265V；DC24V可选", en: "85-265VAC; 24VDC optional" }
+tags: ["4-20mA", "RS485", "RS232", "HART", "Modbus"]
+images:
+  - "/images/products/ht-lde/ht-lde-1.jpg"
+  - "/images/products/ht-lde/ht-lde-2.gif"
+body:
+  zh: |-
+    <h2>电极材质选择</h2>
+    <p>电极材质的选择应根据被测介质的腐蚀性、磨耗性，由用户选定，对一般介质，可查有关腐蚀手册，选定电极材质；对混酸等成分介质，应做挂片实验。参考表1，如下：</p>
+    <table><thead><tr><th>材质</th><th>编码</th><th>耐腐蚀性能</th></tr></thead><tbody><tr><td>316L</td><td>D1</td><td>对于硝酸、室温下&lt;5%的硫酸，沸腾的磷酸、碱溶解；一定压力下的亚硫酸、海水、醋酸等介质有较强的耐蚀性。</td></tr><tr><td>哈氏合金 / HB</td><td>D2</td><td>耐沸点下一切浓度的盐酸、硫酸、氢氟酸、有机酸等非氧化性酸、碱、非氯化性盐液。</td></tr><tr><td>哈氏合金 / HC</td><td>D3</td><td>耐氧化性酸如：硝酸、混酸或铬酸与硫酸的混合物及氧化性盐类、海水等。</td></tr><tr><td>钛</td><td>D4</td><td>能耐海水、各种氯化物和次氯酸盐、氧化性酸（包括发烟硝酸）、有机酸、碱等的腐蚀，不耐较纯的还原性酸（如硫酸、盐酸）的腐蚀，但如酸中含有氧化剂 （如硝酸和含有Fe、Cu离子的介质）时则腐蚀大为降低。</td></tr><tr><td>钽</td><td>D5</td><td>具有优良的耐腐蚀性和玻璃很相似，除了氢氟酸、浓硫酸外，几乎能耐一切化学介质（包括沸点的盐酸、硝酸和175℃以下的硫酸）的腐蚀，在碱中不耐蚀。</td></tr></tbody></table>
+    <h2>内衬材料选择</h2>
+    <p>根据被测介质的种类与温度，来选定衬里的材质。选择衬里的标准见表2</p>
+    <table><thead><tr><th>衬里材料</th><th>编码</th><th>主要性能</th><th>适用范围</th></tr></thead><tbody><tr><td>氯丁橡胶 / Neoprene</td><td>C1</td><td>耐磨性好，有极好的弹性，高扯断力，耐一般低浓度酸碱盐介质的腐蚀，不耐氧化性介质的腐蚀。</td><td>&lt;60℃、一般水、污水、泥浆、矿浆。</td></tr><tr><td>聚氨脂橡胶Polyurethane</td><td>C2</td><td>有极好的耐磨性能，耐酸碱性能略差。</td><td>&lt;80℃、中性强磨损的矿浆、煤浆、泥浆。</td></tr><tr><td>聚四氟乙烯PTFE</td><td>C3</td><td>它是化学性能最稳定的一种材料，能耐沸腾的盐酸、硫酸、硝酸和王水，浓碱和各种有机溶剂，不耐三氟化氯、高温二氟化氧。</td><td>&lt;180℃，浓酸、碱等强腐蚀性介质，卫生类介质。</td></tr><tr><td>F46</td><td>C4</td><td>化学稳定性、电绝缘性、润滑性、不粘性和不燃性与PTFE相仿，但F46材料强度、耐老化性、耐温性能和低温柔韧性优于PTFE。与金属粘接性能好，耐磨性好于PTFE，具有较好的抗撕裂性能。</td><td>&lt;180℃盐酸、硫酸、王水和强氧化剂等，卫生类介质。</td></tr></tbody></table>
+    <h2>性能特点</h2>
+    <p>电磁流量计测量原理是基于法拉第电磁感应定律。流量计的测量管是一内衬绝缘材料的非导磁合金短管。两只电极沿管径方向穿通管壁固定在测量管上。其电极头与衬里内表面基本齐平。励磁线圈由双方波脉冲励磁时，将在与测量管轴线垂直的方向上产生一磁通量密度为B的工作磁场。此时，如果具有一定电导率的流体流经测量管，将切割磁力线感应出电动势E。电动势E正比于磁通量密度B，测量管内径d与平均流速v的乘积。电动势E（流量信号）由电极检出并通过电缆送至转换器。转换器将流量信号放大处理后，可显示流体流量，并能输出脉冲，模拟电流等信号，用于流量的控制和调节。</p>
+    <h2>仪表选型</h2>
+    <table><thead><tr><th>序号</th><th>组件/参数</th><th>选项</th></tr></thead><tbody><tr><td>Ⅰ</td><td>测量管径</td><td>DN10～DN2000</td></tr><tr><td>Ⅱ</td><td>仪表类型</td><td>Y-----一体型 / K-----分体型</td></tr><tr><td>Ⅲ</td><td>工作压力</td><td>P1-----0.6MPa / P2-----1.0MPa / P3-----1.6MPa / P4-----2.5MPa / P5-----4.0MPa / P6-----16MPa / P7-----其它</td></tr><tr><td>Ⅳ</td><td>内衬材料</td><td>C1-C4（内衬材料选择表）</td></tr><tr><td>Ⅴ</td><td>电极材质</td><td>D1-D5（电极材质选择表）</td></tr><tr><td>Ⅵ</td><td>工作电源</td><td>T1-----交流220VAC / T2-----直流24VDC / T3-----电池供电</td></tr><tr><td>Ⅶ</td><td>信号输出</td><td>H1-----4-20mA / H2-----脉冲输出 / H3-----RS485 / H4-----HART</td></tr></tbody></table>
+  en: |-
+    <h2>Electrode Material Selection</h2>
+    <p>Select the electrode material according to the corrosiveness and abrasiveness of the medium. For common media consult a corrosion handbook; for mixed acids perform a coupon test. See Table 1:</p>
+    <table><thead><tr><th>Material</th><th>Code</th><th>Corrosion resistance</th></tr></thead><tbody><tr><td>316L</td><td>D1</td><td>Good resistance to nitric acid, sulfuric acid &lt; 5% at room temperature, boiling phosphoric acid, alkalis, and sulfurous acid, seawater and acetic acid under pressure.</td></tr><tr><td>Hastelloy B</td><td>D2</td><td>Resists non-oxidizing acids such as hydrochloric, sulfuric, hydrofluoric and organic acids of any concentration up to boiling point, alkalis and non-chloride salt solutions.</td></tr><tr><td>Hastelloy C</td><td>D3</td><td>Resists oxidizing acids such as nitric acid, mixed acids, chromic/sulfuric acid mixtures, oxidizing salts and seawater.</td></tr><tr><td>Titanium</td><td>D4</td><td>Resists seawater, chlorides and hypochlorites, oxidizing acids (including fuming nitric acid), organic acids and alkalis. Not resistant to pure reducing acids (sulfuric, hydrochloric), although corrosion drops greatly when oxidizers (nitric acid, Fe or Cu ions) are present.</td></tr><tr><td>Tantalum</td><td>D5</td><td>Excellent corrosion resistance similar to glass; resists almost all chemicals (including boiling hydrochloric and nitric acid and sulfuric acid below 175℃) except hydrofluoric acid and concentrated sulfuric acid. Not resistant to alkalis.</td></tr></tbody></table>
+    <h2>Liner Material Selection</h2>
+    <p>Select the liner according to the medium and temperature. See Table 2:</p>
+    <table><thead><tr><th>Liner</th><th>Code</th><th>Properties</th><th>Suitable for</th></tr></thead><tbody><tr><td>Neoprene</td><td>C1</td><td>Good abrasion resistance, excellent elasticity and tear strength; resists low-concentration acids, alkalis and salts; not resistant to oxidizing media.</td><td>&lt; 60℃; water, wastewater, mud, ore slurry.</td></tr><tr><td>Polyurethane</td><td>C2</td><td>Excellent abrasion resistance; slightly weaker acid/alkali resistance.</td><td>&lt; 80℃; neutral, highly abrasive ore slurry, coal slurry, mud.</td></tr><tr><td>PTFE</td><td>C3</td><td>The most chemically stable material; resists boiling hydrochloric, sulfuric and nitric acid, aqua regia, concentrated alkalis and organic solvents; not resistant to chlorine trifluoride or hot oxygen difluoride.</td><td>&lt; 180℃; concentrated acids, alkalis and other highly corrosive media; sanitary media.</td></tr><tr><td>F46</td><td>C4</td><td>Chemical stability, insulation, lubricity, non-stick and non-flammable properties similar to PTFE, with better strength, aging resistance, temperature resistance and low-temperature flexibility. Bonds well to metal, more abrasion-resistant than PTFE, good tear resistance.</td><td>&lt; 180℃; hydrochloric acid, sulfuric acid, aqua regia, strong oxidizers; sanitary media.</td></tr></tbody></table>
+    <h2>Features</h2>
+    <p>The electromagnetic flowmeter works on Faraday's law of induction. The measuring tube is a short non-magnetic alloy tube lined with insulating material, with two electrodes mounted through the wall along the diameter, flush with the liner. Dual square-wave excitation creates a magnetic field B perpendicular to the tube axis. A conductive liquid flowing through the tube cuts the field and induces an EMF E proportional to B, the inner diameter d and the mean velocity v. The electrodes pick up E (the flow signal) and send it to the converter, which amplifies it, displays the flow and outputs pulse and analog current signals for flow control.</p>
+    <h2>Model Selection</h2>
+    <table><thead><tr><th>No.</th><th>Item</th><th>Options</th></tr></thead><tbody><tr><td>Ⅰ</td><td>Pipe size</td><td>DN10～DN2000</td></tr><tr><td>Ⅱ</td><td>Type</td><td>Y - integral / K - remote</td></tr><tr><td>Ⅲ</td><td>Working pressure</td><td>P1 - 0.6MPa / P2 - 1.0MPa / P3 - 1.6MPa / P4 - 2.5MPa / P5 - 4.0MPa / P6 - 16MPa / P7 - other</td></tr><tr><td>Ⅳ</td><td>Liner</td><td>C1-C4 (see liner table)</td></tr><tr><td>Ⅴ</td><td>Electrode material</td><td>D1-D5 (see electrode table)</td></tr><tr><td>Ⅵ</td><td>Power supply</td><td>T1 - 220VAC / T2 - 24VDC / T3 - battery</td></tr><tr><td>Ⅶ</td><td>Signal output</td><td>H1 - 4-20mA / H2 - pulse / H3 - RS485 / H4 - HART</td></tr></tbody></table>

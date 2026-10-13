@@ -1,0 +1,58 @@
+model: "HTDS-100P"
+category: flow
+featured: false
+order: 190
+name:
+  zh: "HTDS-100P便携式超声波流量计"
+  en: "HTDS-100P Portable Ultrasonic Flowmeter"
+summary:
+  zh: "HTDS-100P便携式超声波流量计，适用于各种工业现场中液体流量的在线标定和巡检测量．具有一致性好、电池供电时间长、操作简单、内置热敏一体式打印机等特点，该款产品已广泛应用于石油化工、冶金、电力、自来水、水利、能源监测等行业，受到广大用户的认可。"
+  en: "The HTDS-100P portable ultrasonic flowmeter is used for online verification and patrol measurement of liquid flow. It offers good consistency, long battery life, simple operation and a built-in thermal printer, and is widely used in petrochemical, metallurgy, power, water supply, water conservancy and energy monitoring."
+features:
+  zh:
+    - "中英文显示"
+    - "流速范围0．01～±32m/s"
+    - "适用于水、海水、污水、酸碱液、酒精、各种油类等均匀、单一、稳定的液体"
+    - "适用于钢、不锈钢、铸铁、铜、PVC、铝、玻璃钢等均匀质密的管道"
+    - "传感器安装点应满足上游10D、下游5D、距泵出口处30D（D指管径）"
+    - "准确度±1%"
+    - "非接触式测量、体积小、携带方便"
+    - "内置镍氢充电电池，连续工作20小时以上"
+    - "内置智能打印机（EPSON），实现即时或定时打印"
+    - "标准数据接口RS232"
+    - "功耗2W"
+    - "工作电源为AC220或内置镍氢充电电池"
+    - "配备一体式铝合金防护箱，可在野外恶劣环境中应用"
+  en:
+    - "Chinese/English display"
+    - "Velocity range 0.01 to ±32 m/s"
+    - "For homogeneous, stable liquids such as water, seawater, wastewater, acids, alkalis, alcohol and oils"
+    - "For dense pipes: steel, stainless steel, cast iron, copper, PVC, aluminum, FRP"
+    - "Sensor location: 10D upstream, 5D downstream, 30D from pump outlet (D = pipe diameter)"
+    - "Accuracy ±1%"
+    - "Non-contact, compact and portable"
+    - "Rechargeable NiMH battery, over 20 hours continuous operation"
+    - "Built-in EPSON printer for instant or scheduled printing"
+    - "Standard RS232 interface"
+    - "Power consumption 2W"
+    - "Powered by 220VAC or built-in NiMH battery"
+    - "Rugged aluminum carrying case for harsh field use"
+applications:
+  zh: []
+  en: []
+specs: []
+tags: ["RS232"]
+images:
+  - "/images/products/htds-100p/htds-100p-1.jpg"
+datasheet: "/files/htds-ultrasonic-flowmeter-heat-meter-manual.pdf"
+body:
+  zh: |-
+    <h2>备品备件</h2>
+    <table><thead><tr><th>名称</th><th>备注</th></tr></thead><tbody><tr><td>标准小型传感器S1型</td><td>测量范围：DN15-100mm</td></tr><tr><td>标准中型传感器M1型</td><td>测量范围：DN50-700mm</td></tr><tr><td>标准大型传感器L1型</td><td>测量范围：DN300-6000mm</td></tr><tr><td>高温小型传感器S1H型</td><td>测量范围：DN15-100mm</td></tr><tr><td>高温中型传感器M1H型</td><td>测量范围：DN50-700mm</td></tr><tr><td>标准小支架传感器HS型</td><td>测量范围：DN15-100mm</td></tr><tr><td>标准中支架传感器HM型</td><td>测量范围：DN50-700mm</td></tr></tbody></table>
+    <h2>标准配置</h2>
+    <img src="/images/products/htds-100p/htds-100p-2.jpg" alt="HTDS-100P便携式超声波流量计 标准配置">
+  en: |-
+    <h2>Sensors &amp; Accessories</h2>
+    <table><thead><tr><th>Name</th><th>Remarks</th></tr></thead><tbody><tr><td>Standard small sensor S1</td><td>Range: DN15-100</td></tr><tr><td>Standard medium sensor M1</td><td>Range: DN50-700</td></tr><tr><td>Standard large sensor L1</td><td>Range: DN300-6000</td></tr><tr><td>High-temperature small sensor S1H</td><td>Range: DN15-100</td></tr><tr><td>High-temperature medium sensor M1H</td><td>Range: DN50-700</td></tr><tr><td>Small bracket sensor HS</td><td>Range: DN15-100</td></tr><tr><td>Medium bracket sensor HM</td><td>Range: DN50-700</td></tr></tbody></table>
+    <h2>Standard Configuration</h2>
+    <img src="/images/products/htds-100p/htds-100p-2.jpg" alt="HTDS-100P Standard Configuration">

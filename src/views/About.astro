@@ -11,8 +11,8 @@ const { lang } = Astro.props;
 const t = useT(lang);
 const stats =
   lang === 'zh'
-    ? [['15+', '行业经验（年）'], ['60+', '产品型号'], ['1000+', '服务项目'], ['30+', '覆盖省市']]
-    : [['15+', 'Years of experience'], ['60+', 'Product models'], ['1000+', 'Projects served'], ['30+', 'Provinces covered']];
+    ? [['2010', '创立（大连宏泰仪表厂）'], ['4', '产品系列'], ['10+', '高级职称技术人员'], ['定制', '按需订制产品']]
+    : [['2010', 'Founded (Dalian Hongtai Instrument Factory)'], ['4', 'Product lines'], ['10+', 'Senior engineers'], ['Custom', 'Built to order']];
 ---
 
 <Base lang={lang} title={t('nav.about')}>
@@ -23,13 +23,15 @@ const stats =
       {
         lang === 'zh' ? (
           <>
-            <p>{site.company.zh}专注于水处理在线分析仪表、流量/压力/液位仪表及工业阀门的研发、生产与销售，为市政水务、污水处理、化工、电力、食品制药等行业提供测量与控制整体解决方案。</p>
-            <p>公司拥有完整的生产与标定检测能力，产品通过 ISO 9001 质量体系认证，并可根据客户工况提供定制化选型服务。</p>
+            <p>{site.company.zh}座落于全国自动化仪表生产基地、素有北方明珠之称的海滨城市大连，是集产品研发、生产、销售为一体的现代化企业，专业从事工业自动化仪表的生产和制造。</p>
+            <p>公司主要产品包括：浓度仪表（浊度计、悬浮物浓度计、超声波浓度计）；流量仪表（超声波流量计、超声波明渠流量计、电磁流量计、涡轮流量计）；液（物）位仪表（超声波液位计、超声波液位差计）；以及配套水质分析仪表（PH/ORP 监控仪、溶氧仪、超声波泥水界面仪）。</p>
+            <p>公司拥有高级职称技术人员十余名，长期与高校合作，能按客户要求提供订制产品。产品广泛应用于国防、石油、化工、冶金、电力、制药、食品、供热、环境工程等众多行业。</p>
           </>
         ) : (
           <>
-            <p>{site.company.en} develops, manufactures and sells online water quality analyzers, flow/pressure/level instruments and industrial valves, delivering measurement and control solutions to water utilities, wastewater, chemical, power, food and pharmaceutical industries.</p>
-            <p>With complete production and calibration capabilities and ISO 9001 certified quality management, we provide application-specific sizing and customization.</p>
+            <p>{site.company.en} is located in Dalian, a coastal city known as the Pearl of the North and a national base for automation instruments. We integrate R&D, manufacturing and sales, specializing in industrial automation instruments.</p>
+            <p>Our products include concentration meters (turbidity, suspended solids and ultrasonic concentration meters), flowmeters (ultrasonic, ultrasonic open channel, electromagnetic and turbine), level meters (ultrasonic level and level difference meters), and water quality analyzers (pH/ORP, dissolved oxygen and ultrasonic sludge blanket meters).</p>
+            <p>With more than ten senior engineers and long-term university partnerships, we can build products to customer requirements. Our instruments serve defense, petroleum, chemical, metallurgy, power, pharmaceutical, food, district heating and environmental engineering industries.</p>
           </>
         )
       }

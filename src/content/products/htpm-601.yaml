@@ -1,0 +1,52 @@
+model: "HTPM-601"
+category: water-quality
+featured: false
+order: 60
+name:
+  zh: "HTPM-601型便携式PH/ORP"
+  en: "HTPM-601 Portable pH/ORP Meter"
+summary:
+  zh: "HTPM-601PH/ORP计由便携式主机以及传感器组成。传感器使用玻璃指示电极和参比电极组合在一起的复合电极来测量水质的PH/ORP值，数据稳定，性能可靠。"
+  en: "The HTPM-601 pH/ORP meter consists of a portable handheld unit and a sensor. The sensor uses a combination electrode (glass indicator plus reference) to measure pH/ORP with stable data and reliable performance."
+features:
+  zh:
+    - "便携式主机IP66防护等级"
+    - "人体工学曲线设计，带有橡胶垫圈，适于手握操作，在潮湿环境中容易掌握"
+    - "带有USB接口，可以实现对内置电池充电，并可通过USB接口实现数据导出"
+  en:
+    - "IP66 handheld unit"
+    - "Ergonomic design with rubber grip, easy to hold in wet conditions"
+    - "USB port for charging the built-in battery and exporting data"
+applications:
+  zh: []
+  en: []
+specs:
+  - label: { zh: "测量范围", en: "Measuring range" }
+    value: { zh: "pH ：0～14.00pH / ORP ：-1000mV~1000mV / 温度：0℃～60℃", en: "pH: 0-14.00 pH / ORP: -1000 to 1000 mV / Temperature: 0-60℃" }
+  - label: { zh: "分辨率", en: "Resolution" }
+    value: { zh: "pH ：0.01pH / ORP ：1mV / 温度：0.01℃", en: "pH: 0.01 pH / ORP: 1 mV / Temperature: 0.01℃" }
+  - label: { zh: "测量精度", en: "Accuracy" }
+    value: { zh: "pH ： ±0.1pH / ORP ：±2mV （电子元件） / 温度： 0.01℃", en: "pH: ±0.1 pH / ORP: ±2 mV (electronics) / Temperature: 0.01℃" }
+  - label: { zh: "外壳材料", en: "Housing material" }
+    value: { zh: "pH/ORP传感器 ： PE / 便携式手操器 ： ABS+PC", en: "pH/ORP sensor: PE / Handheld unit: ABS+PC" }
+  - label: { zh: "显示", en: "Display" }
+    value: { zh: "3.5寸彩色显示屏幕，背光可调", en: "3.5-inch color display, adjustable backlight" }
+  - label: { zh: "数据存储", en: "Data storage" }
+    value: { zh: "2G数据存储空间", en: "2 GB data storage" }
+  - label: { zh: "存储温度", en: "Storage temperature" }
+    value: { zh: "-15～60℃", en: "-15～60℃" }
+  - label: { zh: "工作温度", en: "Operating temperature" }
+    value: { zh: "0～50℃（不结冰）", en: "0-50℃ (non-freezing)" }
+  - label: { zh: "尺寸/重量", en: "Size/Weight" }
+    value: { zh: "pH/ORP传感器尺寸：直径12mm*长度120mm 重量：＜0.1kg / 便携式主机尺寸 ：203*100*43mm 重量：0.5kg", en: "pH/ORP sensor: Ø12 × 120 mm, < 0.1 kg / Handheld unit: 203 × 100 × 43 mm, 0.5 kg" }
+tags: ["IP66"]
+images:
+  - "/images/products/htpm-601/htpm-601-1.jpg"
+  - "/images/products/htpm-601/htpm-601-2.jpg"
+body:
+  zh: |-
+    <h2>注意事项</h2>
+    <ul><li>校准时需要等待溶液示值稳定后，再确认。</li><li>电极校准确认前，需要放置在标液中，待显示温度稳定。</li><li>电极校准前，已长时间处于空气中，电极表面明显干燥，请用pH=4的溶液浸泡8个小时。</li><li>切换溶液是，需要先清洗干净，并用纸巾拭去溶液残留。</li><li>电极不能长时间浸泡在电导率低于300us/cm的溶液中，否则易造成参比电极故障。</li><li>使用完毕后应清洁后旋好带有保护液的护套并妥善保存。</li></ul>
+  en: |-
+    <h2>Notes</h2>
+    <ul><li>When calibrating, wait for the reading to stabilize before confirming.</li><li>Before confirming calibration, keep the electrode in the standard solution until the temperature reading is stable.</li><li>If the electrode has been in air for a long time and its surface is dry, soak it in pH 4 solution for 8 hours before calibration.</li><li>When changing solutions, rinse the electrode and wipe off residue with a tissue.</li><li>Do not soak the electrode for long in solutions below 300 μS/cm, or the reference electrode may fail.</li><li>After use, clean the electrode, fit the cap with storage solution and store properly.</li></ul>

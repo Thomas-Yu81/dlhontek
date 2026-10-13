@@ -12,16 +12,16 @@ const t = useT(lang);
 const items: { title: string; desc: string; cats: CategoryId[] }[] =
   lang === 'zh'
     ? [
-        { title: '市政供水', desc: '水源地、水厂工艺段及管网的浊度、余氯、pH 在线监测与流量计量。', cats: ['water-quality', 'flow'] },
-        { title: '污水处理', desc: '进出水 COD/氨氮/总磷监测、曝气池溶解氧控制、污泥浓度与液位测量。', cats: ['water-quality', 'pressure-level'] },
-        { title: '工业循环水', desc: '电导率、pH 联动加药控制，配合电动/气动阀门实现自动排污。', cats: ['water-quality', 'valves'] },
-        { title: '化工与电力', desc: '耐腐蚀调节阀、质量流量计、差压变送器，满足高温高压与防爆工况。', cats: ['valves', 'flow', 'pressure-level'] },
+        { title: '给水与污水处理', desc: '曝气池溶解氧、pH/ORP、余氯在线监测，回流污泥、二沉池、浓缩池的污泥浓度与泥水界面测量。', cats: ['water-quality', 'concentration'] },
+        { title: '选矿、洗煤与造纸', desc: '矿浆、煤浆、灰浆、纸浆浓度在线监测，配合管道流量计量实现工艺自动控制。', cats: ['concentration', 'flow'] },
+        { title: '石油、化工与电力', desc: '电磁、涡街、涡轮及超声波流量计，适用于导电液体、蒸汽、气体和腐蚀性介质的流量测量。', cats: ['flow', 'water-quality'] },
+        { title: '水利、供热与环境工程', desc: '明渠流量、河道/水库水位、罐池液位与液位差测量，以及供热管网的超声波热量计量。', cats: ['level', 'flow'] },
       ]
     : [
-        { title: 'Municipal Water Supply', desc: 'Online turbidity, chlorine and pH monitoring plus flow metering for sources, plants and networks.', cats: ['water-quality', 'flow'] },
-        { title: 'Wastewater Treatment', desc: 'Influent/effluent COD, ammonia and phosphorus monitoring, DO control and sludge/level measurement.', cats: ['water-quality', 'pressure-level'] },
-        { title: 'Industrial Cooling Water', desc: 'Conductivity and pH-based dosing control with electric/pneumatic valves for automatic blowdown.', cats: ['water-quality', 'valves'] },
-        { title: 'Chemical & Power', desc: 'Corrosion-resistant control valves, Coriolis meters and DP transmitters for harsh, hazardous conditions.', cats: ['valves', 'flow', 'pressure-level'] },
+        { title: 'Water & Wastewater', desc: 'Online DO, pH/ORP and residual chlorine monitoring; sludge concentration and sludge blanket measurement in return sludge, clarifiers and thickeners.', cats: ['water-quality', 'concentration'] },
+        { title: 'Mining, Coal Washing & Paper', desc: 'Online slurry, coal slurry, mortar and pulp concentration monitoring with pipe flow metering for automatic process control.', cats: ['concentration', 'flow'] },
+        { title: 'Oil, Chemical & Power', desc: 'Electromagnetic, vortex, turbine and ultrasonic flowmeters for conductive liquids, steam, gas and corrosive media.', cats: ['flow', 'water-quality'] },
+        { title: 'Hydrology, Heating & Environment', desc: 'Open channel flow, river and reservoir water level, tank level and level difference, and ultrasonic heat metering for heating networks.', cats: ['level', 'flow'] },
       ];
 ---
 

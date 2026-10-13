@@ -1,0 +1,54 @@
+model: "HTCN-502"
+category: water-quality
+featured: false
+order: 110
+name:
+  zh: "HTCN-502系列溶解氧"
+  en: "HTCN-502 Dissolved Oxygen Analyzer"
+summary:
+  zh: "HTCN-502具有多功能、测量精确、适应性强、干扰性强、操作简单等特点，广泛应用于工业、农业、科研、环保等领域。"
+  en: "The HTCN-502 is multi-functional, accurate, adaptable, interference-resistant and easy to operate, widely used in industry, agriculture, research and environmental protection."
+features:
+  zh: []
+  en: []
+applications:
+  zh: []
+  en: []
+specs:
+  - label: { zh: "测量范围", en: "Measuring range" }
+    value: { zh: "0.00至20mg/L / 0.0至99.9℃", en: "0.00-20 mg/L / 0.0-99.9℃" }
+  - label: { zh: "解析度", en: "Resolution" }
+    value: { zh: "0.01 mg/L / 0.1℃", en: "0.01 mg/L / 0.1℃" }
+  - label: { zh: "测量精度", en: "Accuracy" }
+    value: { zh: "±2% / ±0.5℃", en: "±2% / ±0.5℃" }
+  - label: { zh: "信号输出", en: "Signal output" }
+    value: { zh: "隔离式4-20mA，负载上限750欧姆", en: "Isolated 4-20mA, max. load 750Ω" }
+  - label: { zh: "显示", en: "Display" }
+    value: { zh: "LCD液晶显示", en: "LCD" }
+  - label: { zh: "温度补偿", en: "Temperature compensation" }
+    value: { zh: "自动温度补偿，采用PT1000欧姆RTD温度元件", en: "Automatic temperature compensation, PT1000 RTD" }
+  - label: { zh: "标定方法", en: "Calibration method" }
+    value: { zh: "1点（空气100%）或2点标定（0点和空气100%）", en: "1-point (100% air) or 2-point (zero and 100% air) calibration" }
+  - label: { zh: "继电器", en: "Relay" }
+    value: { zh: "220V，3A", en: "220V, 3A" }
+  - label: { zh: "电源", en: "Power supply" }
+    value: { zh: "220VAC，50Hz；24VDC", en: "220VAC, 50Hz; 24VDC" }
+  - label: { zh: "运行条件", en: "Operating conditions" }
+    value: { zh: "0-60℃；＜85%相对湿度", en: "0-60℃; < 85% RH" }
+  - label: { zh: "防护等级", en: "Protection" }
+    value: { zh: "IP54", en: "IP54" }
+  - label: { zh: "外型尺寸", en: "Dimensions" }
+    value: { zh: "96H×96W×120Dmm 挖孔尺寸 92×92mm", en: "96H × 96W × 120D mm, panel cutout 92 × 92 mm" }
+  - label: { zh: "测量原理", en: "Measuring principle" }
+    value: { zh: "极谱法", en: "Polarographic" }
+tags: ["4-20mA"]
+images:
+  - "/images/products/htcn-502/htcn-502-1.jpg"
+  - "/images/products/htcn-502/htcn-502-2.jpg"
+body:
+  zh: |-
+    <h2>安装使用</h2>
+    <ul><li>首次使用或更换电极时需要对仪器进行校正，以后每6个月进行一次校正，具体情况根据现场使用情况而定。</li><li>仪器与电极之间必须使用专用屏蔽线且不能剪断，信号线长度不能超过30米，若要延长或剪断信号线必须安装前置信号放大器。</li><li>仪器与电极安装地点应尽量避开变频器、380V电极等干扰源，若有干扰应做好屏蔽工作。</li><li>继电器与380V设备连接时需要使用交流接触器。</li></ul>
+  en: |-
+    <h2>Installation &amp; Use</h2>
+    <ul><li>Calibrate the instrument on first use and after replacing the electrode, then every 6 months depending on site conditions.</li><li>Use the dedicated shielded cable between instrument and electrode and do not cut it. The signal cable must not exceed 30 m; a preamplifier is required to extend or cut it.</li><li>Install away from interference sources such as VFDs and 380V equipment; shield properly if interference exists.</li><li>Use an AC contactor when connecting relays to 380V equipment.</li></ul>

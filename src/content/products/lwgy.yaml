@@ -1,0 +1,83 @@
+model: "LWGY"
+category: flow
+featured: false
+order: 130
+name:
+  zh: "LWGY系列涡轮流量计"
+  en: "LWGY Turbine Flowmeter"
+summary:
+  zh: "LWGY系列涡轮流量计具有结构简单、轻巧、复现性好、反应灵敏，安装维护使用方便等特点的新一代涡轮流量计，广泛用于测量封闭管道中与不锈钢1Cr18Ni9Ti、2Cr13及刚玉Al2O3、硬质合金不起腐蚀作用，且无纤维、颗粒等杂质，工作温度下运动粘度小于5×10-6m2/s的液体，对于运动粘度大于5×10-6m2/s的液体，可对流量计进行实液标定后使用。"
+  en: "The LWGY is a new-generation turbine flowmeter: simple, light, repeatable, responsive and easy to install and maintain. It measures liquids in closed pipes that do not corrode 1Cr18Ni9Ti, 2Cr13 stainless steel, corundum (Al2O3) or carbide, contain no fibers or particles, and have a kinematic viscosity below 5×10-6 m2/s at operating temperature. Higher-viscosity liquids can be measured after calibration with the actual liquid."
+features:
+  zh:
+    - "准确度，一般可达±1%、±0.5%"
+    - "重复性好，短期重复性可达0.05%~0.2%,正是由于具有良好的重复性，如经常校准或在线校准可得到较高的准确度"
+    - "输出脉冲频率信号，标准4～20mA模拟信号，RS485数字信号适于总量计量及与计算机连接，无零点漂移，抗干扰能力强，信号强度高"
+    - "范围度宽，中大口径可达1:20，小口径为1:10"
+    - "结构紧凑轻巧，安装维护方便，流通能力大"
+    - "适用高压测量，仪表表体上不必开孔，易制成高压型仪表"
+    - "可制成插入型，适用于大口径测量，压力损失小，价格低，可不断流取出，安装维护方便"
+  en:
+    - "Accuracy typically ±1% or ±0.5%"
+    - "Short-term repeatability 0.05%-0.2%; frequent or online calibration gives higher accuracy"
+    - "Pulse frequency, 4-20mA and RS485 outputs for totalizing and computer connection; no zero drift, strong anti-interference"
+    - "Wide turndown: 1:20 for medium/large sizes, 1:10 for small sizes"
+    - "Compact and light, easy maintenance, high flow capacity"
+    - "Suitable for high pressure; no holes in the body"
+    - "Insertion version for large pipes: low pressure loss, low cost, removable without stopping flow"
+applications:
+  zh: []
+  en: []
+specs:
+  - label: { zh: "仪表口径 / 连接方式", en: "Size / Connection" }
+    value: { zh: "DN4、6、10、15、20、25、32、40：螺纹连接；DN（15、20、25、32、40）、50、65、80、100、125、150、200：法兰连接", en: "DN4, 6, 10, 15, 20, 25, 32, 40: threaded; DN(15-40), 50, 65, 80, 100, 125, 150, 200: flanged" }
+  - label: { zh: "精度等级", en: "Accuracy class" }
+    value: { zh: "±1%R、±0.5%R", en: "±1%R, ±0.5%R" }
+  - label: { zh: "量程比", en: "Turndown" }
+    value: { zh: "1:10；1:15；1:20", en: "1:10; 1:15; 1:20" }
+  - label: { zh: "仪表材质", en: "Material" }
+    value: { zh: "304不锈钢、316L不锈钢等", en: "304 / 316L stainless steel, etc." }
+  - label: { zh: "工作温度", en: "Operating temperature" }
+    value: { zh: "-20～＋120℃", en: "-20 to +120℃" }
+  - label: { zh: "环境条件", en: "Ambient conditions" }
+    value: { zh: "温度－10～+55℃，相对湿度5%～90%，大气压力86～106Kpa", en: "-10 to +55℃, 5%-90% RH, 86-106 kPa" }
+  - label: { zh: "输出信号", en: "Output signal" }
+    value: { zh: "传感器：脉冲频率信号，低电平≤0.8V 高电平≥8V / 变送器：两线制4～20mADC电流信号", en: "Sensor: pulse frequency, low ≤ 0.8V, high ≥ 8V / Transmitter: 2-wire 4-20mA DC" }
+  - label: { zh: "供电电源", en: "Power supply" }
+    value: { zh: "+12VDC 、+24VDC（可选），现场显示型自带3V锂电池或24VDC外供电", en: "+12VDC or +24VDC (optional); local display type: 3V lithium battery or external 24VDC" }
+  - label: { zh: "信号传输", en: "Signal cable" }
+    value: { zh: "STVPV3×0.3（三线制），2×0.3（二线制）", en: "STVPV 3×0.3 (3-wire), 2×0.3 (2-wire)" }
+  - label: { zh: "传输距离", en: "Transmission distance" }
+    value: { zh: "≤1000m", en: "≤1000m" }
+  - label: { zh: "信号接口", en: "Signal connection" }
+    value: { zh: "基本型：豪斯曼接头或自带三芯线缆；防爆型：M20×1.5", en: "Basic: Hirschmann connector or 3-core cable; Ex: M20×1.5" }
+  - label: { zh: "防爆等级", en: "Explosion protection" }
+    value: { zh: "基本型：非防爆产品；防爆型：ExdⅡBT6", en: "Basic: non-Ex; Ex type: Exd IIBT6" }
+  - label: { zh: "防护等级", en: "Protection" }
+    value: { zh: "IP65", en: "IP65" }
+tags: ["4-20mA", "RS485", "IP65"]
+images:
+  - "/images/products/lwgy/lwgy-1.jpg"
+body:
+  zh: |-
+    <h2>仪表分类</h2>
+    <p>按仪表功能分类，LWGY系列涡轮流量计分为两大类：</p>
+    <ul><li>涡轮流量传感器/变送器</li></ul>
+    <p>LWGY-N型传感器：12～24VDC供电，三线制脉冲输出；</p>
+    <p>LWGY-A型变送器：24VDC供电，二线制4～20mA输出。</p>
+    <ul><li>智能一体化涡轮流量计</li></ul>
+    <p>LWGY-B型：供电电源采用3.2V10AH锂电池（可连续运行4年以上）；无信号输出功能。</p>
+    <p>LWGY-C型：供电电源采用24VDC外供电，输出4～20mA标准两线制电流信号，并可根据不同的现场需要，增加RS485或HART通讯。</p>
+    <h2>仪表选型</h2>
+    <table><thead><tr><th>序号</th><th>组件/参数</th><th>选项</th></tr></thead><tbody><tr><td>Ⅰ</td><td>测量管径</td><td>DN10～DN300</td></tr><tr><td>Ⅱ</td><td>仪表类型</td><td>N-----涡轮传感器（脉冲输出） / A-----涡轮变送器（4-20mA输出） / B-----现场显示型（无信号输出） / C-----现场智能型（有信号输出）</td></tr><tr><td>Ⅲ</td><td>工作压力</td><td>P1-----1.6MPa / P2-----2.5MPa / P3-----4.0MPa / P4-----6.3MPa / P5-----16MPa / P6-----25MPa</td></tr><tr><td>Ⅵ</td><td>工作电源</td><td>D1-----直流12VDC / D2-----直流24VDC / D3-----电池供电</td></tr><tr><td>Ⅶ</td><td>信号输出</td><td>H1-----4-20mA / H2-----脉冲输出 / H3-----RS485 / H4-----HART</td></tr></tbody></table>
+  en: |-
+    <h2>Versions</h2>
+    <p>By function, LWGY turbine flowmeters fall into two groups:</p>
+    <ul><li>Turbine flow sensor / transmitter</li></ul>
+    <p>LWGY-N sensor: 12-24VDC, 3-wire pulse output</p>
+    <p>LWGY-A transmitter: 24VDC, 2-wire 4-20mA output</p>
+    <ul><li>Intelligent integral turbine flowmeter</li></ul>
+    <p>LWGY-B: 3.2V 10Ah lithium battery (runs over 4 years); no signal output</p>
+    <p>LWGY-C: external 24VDC, 2-wire 4-20mA output; RS485 or HART optional</p>
+    <h2>Model Selection</h2>
+    <table><thead><tr><th>No.</th><th>Item</th><th>Options</th></tr></thead><tbody><tr><td>Ⅰ</td><td>Pipe size</td><td>DN10～DN300</td></tr><tr><td>Ⅱ</td><td>Type</td><td>N - sensor (pulse) / A - transmitter (4-20mA) / B - local display (no output) / C - local intelligent (with output)</td></tr><tr><td>Ⅲ</td><td>Working pressure</td><td>P1-----1.6MPa / P2-----2.5MPa / P3-----4.0MPa / P4-----6.3MPa / P5-----16MPa / P6-----25MPa</td></tr><tr><td>Ⅵ</td><td>Power supply</td><td>D1 - 12VDC / D2 - 24VDC / D3 - battery</td></tr><tr><td>Ⅶ</td><td>Signal output</td><td>H1 - 4-20mA / H2 - pulse / H3 - RS485 / H4 - HART</td></tr></tbody></table>

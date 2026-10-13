@@ -1,0 +1,57 @@
+model: "HTDS-100F"
+category: flow
+featured: true
+order: 170
+name:
+  zh: "HTDS-100F固定式超声波流量计"
+  en: "HTDS-100F Fixed Ultrasonic Flowmeter"
+summary:
+  zh: "HTDS-100F固定式超声波流量计广泛应用于工业现场中各种液体的在线流量计量，该款产品主机分为标准壁挂型、标准盘装型、壁挂防爆型，传感器分为外缚式、插入式、管段式等，以满足用户不同现场的使用需要。"
+  en: "The HTDS-100F fixed ultrasonic flowmeter is widely used for online flow metering of liquids in industry. Transmitters come in wall-mount, panel-mount and explosion-proof wall-mount versions; sensors in clamp-on, insertion and spool types to suit different sites."
+features:
+  zh:
+    - "自动记忆前512天、前128个月、前10年正/负/净累积"
+    - "自动记忆前30次上、断电时间和流量并可实现流量的自动或手动补加，可通过MODBUS协议读出"
+    - "可编程批量（定量）控制器，故障自诊断功能"
+    - "固定式超声波流量计广泛应用于工业现场中各种液体的在线流量测量，该款产品主机分为标准壁挂型、标准盘装型、壁挂防爆型，传感器分为外缚式、插入式、管段式等，以满足用户不同现场的使用需要"
+  en:
+    - "Stores forward/reverse/net totals for the last 512 days, 128 months and 10 years"
+    - "Logs the last 30 power on/off events with flow, supports automatic or manual flow compensation, readable via MODBUS"
+    - "Programmable batch controller and fault self-diagnosis"
+    - "Wall-mount, panel-mount and explosion-proof transmitters with clamp-on, insertion or spool sensors for different sites"
+applications:
+  zh: []
+  en: []
+specs:
+  - label: { zh: "测量精度", en: "Accuracy" }
+    value: { zh: "优于1%，重复性：优于0.2%", en: "Better than 1%; repeatability better than 0.2%" }
+  - label: { zh: "测量周期", en: "Measuring cycle" }
+    value: { zh: "500ms(每秒2次，每个周期采集128组数据)", en: "500 ms (2 per second, 128 samples per cycle)" }
+  - label: { zh: "工作电源", en: "Power supply" }
+    value: { zh: "85～264VAC/隔离24VDC", en: "85-264VAC / isolated 24VDC" }
+  - label: { zh: "显示", en: "Display" }
+    value: { zh: "2*10汉字背光液晶可显示瞬时流量及正、负、净累积量", en: "2×10-character backlit LCD showing flow rate and forward/reverse/net totals" }
+  - label: { zh: "操作", en: "Keypad" }
+    value: { zh: "4*4轻触键盘", en: "4×4 membrane keypad" }
+  - label: { zh: "信号输入", en: "Signal input" }
+    value: { zh: "3路4-20mA模拟输入，可输入温度、液位、压力", en: "3 × 4-20mA analog inputs for temperature, level or pressure" }
+  - label: { zh: "信号输出", en: "Signal output" }
+    value: { zh: "1路4-20mA或0-20mA输出，1路隔离RS485输出 / 1路隔离OCT，1路继电器输出", en: "1 × 4-20mA or 0-20mA, 1 × isolated RS485 / 1 × isolated OCT, 1 × relay" }
+  - label: { zh: "通讯协议", en: "Protocol" }
+    value: { zh: "MODBUS协议，M-BUS协议，并兼容其他厂家同类产品协议", en: "MODBUS and M-BUS, compatible with protocols of similar products" }
+tags: ["4-20mA", "RS485", "Modbus"]
+images:
+  - "/images/products/htds-100f/htds-100f-1.jpg"
+  - "/images/products/htds-100f/htds-100f-2.jpg"
+datasheet: "/files/htds-ultrasonic-flowmeter-heat-meter-manual.pdf"
+body:
+  zh: |-
+    <h2>可选主机</h2>
+    <table><thead><tr><th>名称</th><th>备注</th></tr></thead><tbody><tr><td>壁挂式主机</td><td>适用于各种现场的标准配置主机</td></tr><tr><td>防爆式主机</td><td>适用于有防爆要求的介质或者现场</td></tr><tr><td>盘装式主机</td><td>适用于有主控柜或者有布局要求的现场</td></tr></tbody></table>
+    <h2>备品备件</h2>
+    <table><thead><tr><th>名称</th><th>备注</th></tr></thead><tbody><tr><td>标准小型传感器S型</td><td>测量范围：DN15-100mm</td></tr><tr><td>标准中型传感器M型</td><td>测量范围：DN50-700mm</td></tr><tr><td>标准大型传感器L型</td><td>测量范围：DN300-6000mm</td></tr><tr><td>标准插入式传感器</td><td>适用于DN80以上管径，适用温度≤160℃ / 插入式安装，可实现在线不停水安装</td></tr><tr><td>标准管段式传感器</td><td>可根据现场实际情况定制</td></tr></tbody></table>
+  en: |-
+    <h2>Transmitter Options</h2>
+    <table><thead><tr><th>Name</th><th>Remarks</th></tr></thead><tbody><tr><td>Wall-mount transmitter</td><td>Standard transmitter for most sites</td></tr><tr><td>Explosion-proof transmitter</td><td>For hazardous media or areas</td></tr><tr><td>Panel-mount transmitter</td><td>For control cabinets or layout constraints</td></tr></tbody></table>
+    <h2>Sensors &amp; Accessories</h2>
+    <table><thead><tr><th>Name</th><th>Remarks</th></tr></thead><tbody><tr><td>Standard small sensor S</td><td>Range: DN15-100</td></tr><tr><td>Standard medium sensor M</td><td>Range: DN50-700</td></tr><tr><td>Standard large sensor L</td><td>Range: DN300-6000</td></tr><tr><td>Standard insertion sensor</td><td>For DN80 and above, ≤ 160℃ / hot-tap installation without stopping flow</td></tr><tr><td>Standard spool sensor</td><td>Custom-made to site requirements</td></tr></tbody></table>

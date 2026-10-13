@@ -1,0 +1,56 @@
+model: "HTPM-602"
+category: water-quality
+featured: false
+order: 70
+name:
+  zh: "HTPM-602型便携式溶解氧"
+  en: "HTPM-602 Portable Dissolved Oxygen Meter"
+summary:
+  zh: "便携式溶氧仪由主机以及荧光法溶解氧传感器组成。采用先进的荧光法测定原理，没有膜和电解液，基本无需保养，测量时不会产生氧消耗，没有流速/搅动要求；且自带NTC温补功能，测量结果具有良好的重复性及稳定性。"
+  en: "The portable DO meter consists of a handheld unit and an optical (fluorescence) DO sensor. With no membrane or electrolyte it needs almost no maintenance, consumes no oxygen and has no flow or stirring requirement. Built-in NTC temperature compensation gives good repeatability and stability."
+features:
+  zh:
+    - "整机IP66防护等级"
+    - "人体工学曲线设计，带有橡胶垫圈，适于手握操作，在潮湿环境中容易掌握"
+    - "出厂标定，一年无需校准，可现场标定"
+    - "数字化传感器，现场使用方便、快捷，和主机实现即插即用"
+    - "带有USB接口，可以实现对内置电池充电，并可通过USB接口实现数据导出"
+  en:
+    - "IP66 overall protection"
+    - "Ergonomic design with rubber grip, easy to hold in wet conditions"
+    - "Factory calibrated, no calibration needed for one year; field calibration supported"
+    - "Digital sensor, plug-and-play with the handheld unit"
+    - "USB port for charging the built-in battery and exporting data"
+applications:
+  zh: []
+  en: []
+specs:
+  - label: { zh: "量程范围", en: "Measuring range" }
+    value: { zh: "0.00-20mg/L或0~200%饱和度 / 温度:0-40℃", en: "0.00-20 mg/L or 0-200% saturation / Temperature: 0-40℃" }
+  - label: { zh: "测量精度", en: "Accuracy" }
+    value: { zh: "±3%或±0.5℃", en: "±3% or ±0.5℃" }
+  - label: { zh: "存储温度", en: "Storage temperature" }
+    value: { zh: "0-50℃(8402/8403)", en: "0-50℃(8402/8403)" }
+  - label: { zh: "工作温度", en: "Operating temperature" }
+    value: { zh: "0-40℃", en: "0-40℃" }
+  - label: { zh: "外壳材料", en: "Housing material" }
+    value: { zh: "传感器：SUS316L 主机：ABS+PC", en: "Sensor: SUS316L; handheld unit: ABS+PC" }
+  - label: { zh: "主机尺寸", en: "Handheld unit size" }
+    value: { zh: "203×100×43mm 重量：0.5kg", en: "203 × 100 × 43 mm, 0.5 kg" }
+  - label: { zh: "传感器尺寸", en: "Sensor size" }
+    value: { zh: "直径25mm×长度141.7mm 重量：＜0.25kg", en: "Ø25 × 141.7 mm, < 0.25 kg" }
+  - label: { zh: "防护等级", en: "Protection" }
+    value: { zh: "IP68", en: "IP68" }
+  - label: { zh: "电缆长度", en: "Cable length" }
+    value: { zh: "标配3米线缆（可延长）", en: "3 m cable standard (extendable)" }
+  - label: { zh: "数据存储", en: "Data storage" }
+    value: { zh: "2G数据存储空间", en: "2 GB data storage" }
+  - label: { zh: "显示", en: "Display" }
+    value: { zh: "3.5寸彩色显示屏幕，背光可调", en: "3.5-inch color display, adjustable backlight" }
+tags: ["IP66", "IP68"]
+images:
+  - "/images/products/htpm-602/htpm-602-1.jpg"
+  - "/images/products/htpm-602/htpm-602-2.jpg"
+body:
+  zh: |-
+  en: |-
